@@ -52,7 +52,7 @@ html, body {
   line-height: 26px;
 }
 
-.team-box .slide-person .slick-dots li button, .offer-box .offer-btn, .world-box .world-locate .des-button, .popular-box .slide-content .slick-prev, .popular-box .slide-content .slick-next {
+.offer-box .offer-btn, .world-box .world-locate .des-button {
   padding: 15px 20px;
   text-decoration: none;
   display: inline-block;
@@ -80,7 +80,7 @@ html, body {
   padding-bottom: 50px;
 }
 
-.team-box .slide-person .slick-dots, .adventure-box .get-nature2 .vacation-park, .adventure-box .get-nature2 .national-park, .adventure-box .get-nature .ice-park, .header-box .bg-slide .slick-dots {
+.team-box .slide-person .slick-dots, .popular-box .slide-content .slick-prev, .popular-box .slide-content .slick-next, .adventure-box .get-nature2 .vacation-park, .adventure-box .get-nature2 .national-park, .adventure-box .get-nature .ice-park, .header-box .bg-slide .slick-dots {
   align-items: center;
   justify-content: center;
 }
@@ -403,8 +403,14 @@ html, body {
 .popular-box .slide-content .slick-prev, .popular-box .slide-content .slick-next {
   width: 50px;
   height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
   padding: 0;
   z-index: 3;
+  cursor: pointer;
+  outline: none;
+  border: none;
   font-size: 2rem;
   border-radius: 50%;
   background-color: #FF7550;
@@ -414,10 +420,10 @@ html, body {
   transition: all 0.5s ease;
 }
 .popular-box .slide-content .slick-prev {
-  left: -25px;
+  left: -15px;
 }
 .popular-box .slide-content .slick-next {
-  right: -25px;
+  right: -15px;
 }
 .popular-box .slide-content .slick-prev:hover, .popular-box .slide-content .slick-next:hover {
   color: #FF7550;
@@ -560,6 +566,9 @@ html, body {
 }
 .team-box .slide-person .slick-dots li button {
   padding: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
   font-size: 0;
   background-color: #787878;
   border-radius: 50%;
@@ -732,7 +741,7 @@ html, body {
     line-height: 32px;
   }
 
-  .popular-box .slide-content .slick-prev, .popular-box .slide-content .slick-next, .world-box .world-locate .des-button, .offer-box .offer-btn, .team-box .slide-person .slick-dots li button {
+  .world-box .world-locate .des-button, .offer-box .offer-btn {
     padding: 20px 30px;
     font-size: 0.75rem;
   }
@@ -789,6 +798,16 @@ html, body {
   .popular-box .slide-content .pakages h3 {
     padding-top: 20px;
   }
+  .popular-box .slide-content .slick-prev, .popular-box .slide-content .slick-next {
+    width: 80px;
+    height: 80px;
+  }
+  .popular-box .slide-content .slick-prev {
+    left: -50px;
+  }
+  .popular-box .slide-content .slick-next {
+    right: -50px;
+  }
 
   /*============WORLD-BOX==============*/
   /*============PLACES-BOX==============*/
@@ -837,7 +856,7 @@ html, body {
     line-height: 32px;
   }
 
-  .popular-box .slide-content .slick-prev, .popular-box .slide-content .slick-next, .world-box .world-locate .des-button, .offer-box .offer-btn, .team-box .slide-person .slick-dots li button {
+  .world-box .world-locate .des-button, .offer-box .offer-btn {
     padding: 18px 25px;
     font-size: 0.75rem;
   }
@@ -862,6 +881,17 @@ html, body {
   }
 
   /*============POPULAR-BOX==============*/
+  .popular-box .slide-content .slick-prev, .popular-box .slide-content .slick-next {
+    width: 70px;
+    height: 70px;
+  }
+  .popular-box .slide-content .slick-prev {
+    left: -30px;
+  }
+  .popular-box .slide-content .slick-next {
+    right: -30px;
+  }
+
   /*============WORLD-BOX==============*/
   /*============PLACES-BOX==============*/
   .places-box .place-right .london {
@@ -893,7 +923,7 @@ html, body {
     line-height: 24px;
   }
 
-  .popular-box .slide-content .slick-prev, .popular-box .slide-content .slick-next, .world-box .world-locate .des-button, .offer-box .offer-btn, .team-box .slide-person .slick-dots li button {
+  .world-box .world-locate .des-button, .offer-box .offer-btn {
     padding: 15px 20px;
   }
 
@@ -947,6 +977,13 @@ html, body {
   }
 
   /*============POPULAR-BOX==============*/
+  .popular-box .slide-content .slick-prev {
+    left: -10px;
+  }
+  .popular-box .slide-content .slick-next {
+    right: -10px;
+  }
+
   /*============WORLD-BOX==============*/
   .world-box .world-image {
     width: 100%;
@@ -981,6 +1018,10 @@ html, body {
   }
 
   /*============TEAM-BOX==============*/
+  .team-box .slide-person .slick-dots li button {
+    padding: 7px;
+  }
+
   /*============PARTNERS-BOX==============*/
   .partners-box {
     padding: 180px 0;
@@ -1009,7 +1050,7 @@ html, body {
   body .text {
     line-height: 24px;
   }
-  body .popular-box .slide-content .slick-prev, .popular-box .slide-content body .slick-prev, body .popular-box .slide-content .slick-next, .popular-box .slide-content body .slick-next, body .world-box .world-locate .des-button, .world-box .world-locate body .des-button, body .offer-box .offer-btn, .offer-box body .offer-btn, body .team-box .slide-person .slick-dots li button, .team-box .slide-person .slick-dots li body button {
+  body .world-box .world-locate .des-button, .world-box .world-locate body .des-button, body .offer-box .offer-btn, .offer-box body .offer-btn {
     padding: 15px 20px;
   }
   body .text {
@@ -1084,6 +1125,12 @@ html, body {
   .popular-box .slide-content .pakages p {
     padding: 0;
   }
+  .popular-box .slide-content .slick-prev {
+    left: -5px;
+  }
+  .popular-box .slide-content .slick-next {
+    right: -5px;
+  }
 
   /*============WORLD-BOX==============*/
   /*============PLACES-BOX==============*/
@@ -1099,6 +1146,10 @@ html, body {
   }
 
   /*============TEAM-BOX==============*/
+  .team-box .slide-person .slick-dots li button {
+    padding: 5px;
+  }
+
   /*============PARTNERS-BOX==============*/
   .partners-box {
     padding: 120px 0;
@@ -1120,19 +1171,20 @@ html, body {
   }
 }
 @media only screen and (max-width: 576px) {
-  .popular-box .slide-content .slick-prev, .popular-box .slide-content .slick-next, .world-box .world-locate .des-button, .offer-box .offer-btn, .team-box .slide-person .slick-dots li button {
+  .world-box .world-locate .des-button, .offer-box .offer-btn {
     padding: 12px 18px;
   }
 
   /*============NAV-BOX==============*/
   .navigation .nav-logo {
     width: 20%;
+    display: none;
   }
   .navigation .nav-bar-btn {
     width: 10%;
   }
   .navigation .nav-icon {
-    width: 65%;
+    width: 85%;
   }
 
   /*============HEADER-BOX==============*/
@@ -1237,16 +1289,13 @@ html, body {
     font-size: 1rem;
   }
 
-  .popular-box .slide-content .slick-prev, .popular-box .slide-content .slick-next, .world-box .world-locate .des-button, .offer-box .offer-btn, .team-box .slide-person .slick-dots li button {
+  .world-box .world-locate .des-button, .offer-box .offer-btn {
     padding: 8px 15px;
   }
 
   /*============NAV-BOX==============*/
-  .navigation .nav-logo {
-    width: 30%;
-  }
   .navigation .nav-icon {
-    width: 55%;
+    width: 75%;
   }
   .navigation .nav-icon a {
     margin-left: 10px;

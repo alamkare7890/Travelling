@@ -53,7 +53,8 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 3,
                     sllidesToScroll: 1,
-                
+                    arrows: false,
+                    dots: false,
                 }           
         
             },
@@ -63,16 +64,20 @@ $(document).ready(function () {
                 settings: {
                     slidesToScroll: 1,
                     slidesToShow: 2,
+                    arrows: false,
+                    dots: true,
+                    
                 }
             
             },
-            
+           
              
             {
                 breakpoint: 576,
                 settings: {
                     slidesToScroll: 1,
                     slidesToShow: 1,
+                    dots: true,
                 }
             
             },

@@ -81,6 +81,18 @@
                     padding-top: 20px;
                 }
             }
+
+            .slick-prev, .slick-next{
+                width: 80px;    
+                height: 80px;
+            }
+            .slick-prev{
+                left: -50px;
+            }
+            .slick-next{
+                right: -50px;
+            }
+
         }
 
     }
@@ -184,6 +196,25 @@
         }
     }
     /*============POPULAR-BOX==============*/
+    .popular-box{
+
+        .slide-content{
+            .slick-prev, .slick-next{
+                width: 70px;    
+                height: 70px;
+            }
+            .slick-prev{
+                left: -30px;
+            }
+            .slick-next{
+                right: -30px;
+            }
+
+        }
+
+    }
+
+
     /*============WORLD-BOX==============*/
     /*============PLACES-BOX==============*/
     .places-box{
@@ -294,6 +325,19 @@
     }
 
     /*============POPULAR-BOX==============*/
+    .popular-box{
+
+        .slide-content{
+
+            .slick-prev{
+                left: -10px;
+            }
+            .slick-next{
+                right: -10px;
+            }
+
+        }
+    }
     /*============WORLD-BOX==============*/
     .world-box{
 
@@ -335,6 +379,25 @@
 
     }
     /*============TEAM-BOX==============*/
+    .team-box{
+
+        .slide-person{
+
+            .slick-dots{
+
+                li{
+
+                    button{
+                            padding: 7px;
+                    }
+
+                }
+            }
+
+        }
+    }
+
+
     /*============PARTNERS-BOX==============*/
     .partners-box{
         padding: 180px 0;
@@ -476,9 +539,20 @@
                     padding: 0;
                 }
             }
-        }
 
+
+            .slick-prev{
+                left: -5px;
+            }
+            .slick-next{
+                right: -5px;
+            }
+
+        }
     }
+        
+
+    
     /*============WORLD-BOX==============*/
     /*============PLACES-BOX==============*/
     .places-box{
@@ -497,6 +571,23 @@
 
     }
     /*============TEAM-BOX==============*/
+     .team-box{
+
+        .slide-person{
+
+            .slick-dots{
+
+                li{
+
+                    button{
+                            padding: 5px;
+                    }
+
+                }
+            }
+
+        }
+    }
     /*============PARTNERS-BOX==============*/
     .partners-box{
         padding: 120px 0;
@@ -533,14 +624,15 @@
 
         .nav-logo{
             width: 20%;
+            display: none;
         }
 
         .nav-bar-btn{
             width: 10%;
-        }
+        } 
 
         .nav-icon{
-            width: 65%;
+            width: 85%;
         }
     }
 
@@ -700,11 +792,9 @@
     /*============NAV-BOX==============*/
     .navigation{
 
-        .nav-logo{
-            width: 30%;
-        }
+       
         .nav-icon{
-            width: 55%;
+            width: 75%;
 
             a{
                 margin-left: 10px;

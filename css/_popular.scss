@@ -62,10 +62,16 @@
         }
         .slick-prev, .slick-next{
             width: 50px;
-            height: 50px;  
-            @extend %commonButton;
+            height: 50px; 
+            display: flex;
+            flex-wrap: wrap;
+            @extend %centerContent;
+            align-content: center;
             padding: 0;
             z-index: 3;
+            cursor: pointer;
+            outline: none;
+            border: none;
             font-size: 2rem;
             border-radius: 50%;
             background-color: #FF7550;
@@ -75,10 +81,10 @@
             transition: all 0.5s ease;
         }
         .slick-prev{
-            left: -25px;
+            left: -15px;
         }
         .slick-next{
-            right: -25px;
+            right: -15px;
         }
         .slick-prev:hover, .slick-next:hover{
             color: #FF7550;

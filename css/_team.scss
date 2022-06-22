@@ -37,32 +37,34 @@
             right: -15px;
         }
 */
-    .slick-dots{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
+        .slick-dots{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
 
-        @extend %centerContent;        
-        li{
-            margin-left: 15px;
-            list-style-type: none;
-            button{
-                @extend %commonButton;
-                padding: 10px;
-                font-size: 0;
-                background-color: #787878;
-                border-radius: 50%;
-                transition: all 0.5s ease;
-            }
+            @extend %centerContent;        
+            li{
+                margin-left: 15px;
+                list-style-type: none;
+                button{
+                    padding: 10px;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 0;
+                    background-color: #787878;
+                    border-radius: 50%;
+                    transition: all 0.5s ease;
+                }
 
-            button:hover{
-                background-color: #787878af;
+                button:hover{
+                    background-color: #787878af;
+                }
             }
-        }
         
 
 
-    }
+        }
 
 
     }
