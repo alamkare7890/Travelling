@@ -1,0 +1,117 @@
+/*============HEADER-BOX==============*/
+.header-box{
+    width: 100%;
+    position: relative;
+    .header-overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+            left: 0;
+            top: 0;
+        background-color: rgba(0, 0, 0, 0.199);
+    }
+    .bg-slide{
+        width: 100%;
+        img{
+            position: relative;
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+
+        .slick-dots{
+            width: 100%;
+            position: absolute;
+            bottom: 5%;
+            flex-direction: row;
+            display: flex;
+            flex-wrap: wrap;
+            z-index: 3;
+            @extend %centerContent;
+            li{
+                list-style-type: none;
+                margin-left: 15px;
+
+                button{
+                    padding: 5px;
+                    font-size: 0;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    border-radius: 50%;
+                    background-color: #b2b67dea;
+                }
+
+            }
+
+
+        }
+
+
+    }
+    .header-content{
+            text-align: center;
+            color: #f1f1f1;
+            padding: 100px 0 20px 0;
+        h1{
+            font-size: 3rem;
+
+        }
+        h2{
+            font-size: 3.5rem;
+            font-family: 'Caveat Brush', cursive;
+
+        }
+
+    }
+    .header-contact{
+
+        width: 85%;
+        margin: 0 auto;
+        padding: 25px;
+        backdrop-filter: blur(2px);
+        background-color: #f1f1f121;
+        border-radius: 15px;
+        .destination, .type, .month , .duration, .contact-button{
+            width: 19%;
+            margin-left: 5px;
+
+            select{
+                width: 100%;
+                padding: 15px 10px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+           
+
+
+        }
+        .submit-btn{
+            text-align: center;
+            padding: 15px 0;
+            background-color: #FF7550;
+            border-radius: 5px;
+            width: 100%;         
+            color: #f1f1f1;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            text-transform: uppercase;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+}
+/*
+.header-box::after{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.438);
+}*/
+

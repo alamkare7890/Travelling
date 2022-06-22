@@ -1,0 +1,23 @@
+.partners-box{
+    width: 100%;
+    padding: 100px 0;
+    @extend %bgProperty;
+    background-image: url(../image/jpg/banner1.jpg);
+    background-attachment: fixed;
+    min-height: 350px;
+
+    h2{
+        color: #f1f1f1;
+        padding-top: 50px;
+    }
+
+    .partners-logo{
+        padding: 50px 0;
+        .brand{
+            width: 20%;
+
+        }
+    }
+
+
+}

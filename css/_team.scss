@@ -1,0 +1,98 @@
+.team-box{
+    width: 100%;
+    padding: 50px 0;
+
+    .team-head{
+        padding: 30px 20px;
+
+        p{
+            color: #787878;
+        }
+    }
+
+    .person{
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .slide-person{
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+
+       /* .slick-arrow{
+            display: flex;
+            @extend %centerContent;
+            @extend %commonButton;
+            padding: 0;
+            width: 50px;
+            height: 50px;
+            font-size: 2rem;
+            position: absolute;
+            top: 50%;
+        }
+        .slick-prev{
+            right: -15px;
+        }
+*/
+    .slick-dots{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        @extend %centerContent;        
+        li{
+            margin-left: 15px;
+            list-style-type: none;
+            button{
+                @extend %commonButton;
+                padding: 10px;
+                font-size: 0;
+                background-color: #787878;
+                border-radius: 50%;
+                transition: all 0.5s ease;
+            }
+
+            button:hover{
+                background-color: #787878af;
+            }
+        }
+        
+
+
+    }
+
+
+    }
+
+}
+
+.person{
+    margin: 0 20px;
+    .person-info{
+        width: 100%;
+        padding: 10px 0;
+        .dgn{
+            width: 65%;
+            h3{
+                color: #212121;
+            }
+        }
+    
+        .person-icon{
+            width: 35%;
+            .fab{
+                color: transparent;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: rgb(0, 0, 0);
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    p{
+        color: #969696;
+    }
+}

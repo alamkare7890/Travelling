@@ -1,0 +1,1406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  /*font-family: 'Caveat Brush', cursive;*/
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1270px;
+}
+
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.space {
+  justify-content: space-between;
+}
+
+.big-head {
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding-bottom: 10px;
+}
+
+.medium-head {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.small-head {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.text {
+  font-size: 1rem;
+  padding-bottom: 10px;
+  line-height: 26px;
+}
+
+.team-box .slide-person .slick-dots li button, .offer-box .offer-btn, .world-box .world-locate .des-button, .popular-box .slide-content .slick-prev, .popular-box .slide-content .slick-next {
+  padding: 15px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.dollor {
+  color: #FF7550;
+  font-weight: 700;
+}
+
+.partners-box, .offer-box, .popular-box, .adventure-box .get-nature2 .vacation-park, .adventure-box .get-nature2 .national-park, .adventure-box .get-nature .ice-park {
+  background-position: center;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.creator-box, .footer-box, .places-box, .world-box, .adventure-box {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.team-box .slide-person .slick-dots, .adventure-box .get-nature2 .vacation-park, .adventure-box .get-nature2 .national-park, .adventure-box .get-nature .ice-park, .header-box .bg-slide .slick-dots {
+  align-items: center;
+  justify-content: center;
+}
+
+/*============NAV-BOX==============*/
+/*============HEADER-BOX==============*/
+/*============ADVENTTURE-BOX==============*/
+/*============POPULAR-BOX==============*/
+/*============WORLD-BOX==============*/
+/*============PLACES-BOX==============*/
+/*============OFFER-BOX==============*/
+/*============TEAM-BOX==============*/
+/*============PARTNERS-BOX==============*/
+/*============FOOTER-BOX==============*/
+/*============NAV-BOX==============*/
+/*============NAV-BOX==============*/
+.navigation {
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+.navigation .nav-logo {
+  width: 15%;
+}
+.navigation .nav-logo img {
+  width: 100%;
+  height: 45px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.navigation .nav-content {
+  width: 55%;
+  justify-content: center;
+  align-items: center;
+}
+.navigation .nav-content li {
+  list-style-type: none;
+  padding-left: 25px;
+}
+.navigation .nav-content li a {
+  padding: 5px 2px;
+  text-decoration: none;
+  color: #000;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  z-index: 0;
+}
+.navigation .nav-bar-btn {
+  display: none;
+  text-align: center;
+}
+.navigation .nav-bar-btn .nav-bar-icon {
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #fff00f;
+  text-decoration: none;
+}
+.navigation .nav-bar-btn .nav-bar-icon .fas {
+  color: darkred;
+}
+.navigation .nav-icon {
+  width: 30%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navigation .nav-icon a {
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1rem;
+}
+.navigation .nav-icon a .fab {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+.navigation .nav-icon .sing-in {
+  background-color: #FEE133;
+  color: #000;
+  padding: 25px 15px;
+  align-self: flex-end;
+  display: inline-block;
+}
+
+/*
+    .fa{
+   ccolor: transparent;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-olor: red;
+ } fot makin outline of font awesome
+
+*/
+/*============HEADER-BOX==============*/
+/*============HEADER-BOX==============*/
+.header-box {
+  width: 100%;
+  position: relative;
+}
+.header-box .header-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.199);
+}
+.header-box .bg-slide {
+  width: 100%;
+}
+.header-box .bg-slide img {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header-box .bg-slide .slick-dots {
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 3;
+}
+.header-box .bg-slide .slick-dots li {
+  list-style-type: none;
+  margin-left: 15px;
+}
+.header-box .bg-slide .slick-dots li button {
+  padding: 5px;
+  font-size: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgba(178, 182, 125, 0.9176470588);
+}
+.header-box .header-content {
+  text-align: center;
+  color: #f1f1f1;
+  padding: 100px 0 20px 0;
+}
+.header-box .header-content h1 {
+  font-size: 3rem;
+}
+.header-box .header-content h2 {
+  font-size: 3.5rem;
+  font-family: "Caveat Brush", cursive;
+}
+.header-box .header-contact {
+  width: 85%;
+  margin: 0 auto;
+  padding: 25px;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  background-color: rgba(241, 241, 241, 0.1294117647);
+  border-radius: 15px;
+}
+.header-box .header-contact .destination, .header-box .header-contact .type, .header-box .header-contact .month, .header-box .header-contact .duration, .header-box .header-contact .contact-button {
+  width: 19%;
+  margin-left: 5px;
+}
+.header-box .header-contact .destination select, .header-box .header-contact .type select, .header-box .header-contact .month select, .header-box .header-contact .duration select, .header-box .header-contact .contact-button select {
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.header-box .header-contact .submit-btn {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #FF7550;
+  border-radius: 5px;
+  width: 100%;
+  color: #f1f1f1;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/*
+.header-box::after{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.438);
+}*/
+/*============ADVENTTURE-BOX==============*/
+/*============ADVENTTURE-BOX==============*/
+.partners-box, .offer-box, .popular-box, .adventure-box .get-nature2 .vacation-park, .adventure-box .get-nature2 .national-park, .adventure-box .get-nature .ice-park {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.adventure-box {
+  padding-top: 50px;
+}
+.adventure-box .get-nature {
+  width: 50%;
+  padding: 30px 0;
+  display: grid;
+  grid-template-columns: 100%;
+  color: #f1f1f1;
+}
+.adventure-box .get-nature .ice-park {
+  background-image: url(../image/jpg/iimg0.jpg);
+  padding: 150px 0;
+  margin: 5px;
+}
+.adventure-box .get-nature .ice-park h2 {
+  font-family: "Caveat Brush", cursive;
+}
+.adventure-box .get-nature2 {
+  width: 50%;
+  padding: 30px 0;
+  color: #f1f1f1;
+}
+.adventure-box .get-nature2 .national-park {
+  background-image: url(../image/jpg/banner3.jpg);
+  padding: 70px 0;
+  margin: 5px;
+}
+.adventure-box .get-nature2 .national-park h2 {
+  font-family: "Caveat Brush", cursive;
+}
+.adventure-box .get-nature2 .vacation-park {
+  background-image: url(../image/jpg/banner.jpg);
+  padding: 70px 0;
+  margin: 5px;
+}
+.adventure-box .get-nature2 .vacation-park h2 {
+  font-family: "Caveat Brush", cursive;
+}
+.adventure-box .get-benefits {
+  padding: 30px 0;
+}
+.adventure-box .get-benefits .benefits {
+  width: 33%;
+  padding: 10px;
+}
+.adventure-box .get-benefits .benefits .hight-lite {
+  color: #FF7550;
+  font-weight: 500;
+  padding-right: 10px;
+}
+.adventure-box .get-benefits .benefits p {
+  text-indent: 25px;
+  color: #9B9B9B;
+}
+
+/*============POPULAR-BOX==============*/
+/*============POPULAR-BOX==============*/
+.popular-box {
+  width: 100%;
+  min-height: 350px;
+  padding: 100px 0;
+  background-attachment: fixed;
+  background-image: url(../image/jpg/bgparallax-01.jpg);
+  position: relative;
+}
+.popular-box .slide-content {
+  width: 95%;
+  margin: 0 auto;
+}
+.popular-box .slide-content .pakages {
+  margin: 0 15px;
+  background-color: #f1f1f1;
+}
+.popular-box .slide-content .pakages img {
+  width: 100%;
+}
+.popular-box .slide-content .pakages h3 {
+  padding: 10px;
+}
+.popular-box .slide-content .pakages p {
+  padding: 10px;
+  color: #986767;
+}
+.popular-box .slide-content .pakages .trip {
+  padding: 0 10px;
+  align-items: center;
+}
+.popular-box .slide-content .pakages .trip span, .popular-box .slide-content .pakages .trip del {
+  color: #9D6975;
+}
+.popular-box .slide-content .pakages .price {
+  padding: 0 10px 15px 10px;
+}
+.popular-box .slide-content .pakages .price .rate .fas {
+  color: #FFA127;
+  font-size: 0.8rem;
+}
+.popular-box .slide-content .pakages .price .rate .light {
+  color: transparent;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+}
+.popular-box .slide-content .pakages .price .rate span {
+  color: #9D6975;
+  font-size: 0.8rem;
+}
+.popular-box .slide-content .pakages .price .dollor {
+  color: #FF7550;
+  font-weight: 700;
+}
+.popular-box .slide-content .slick-prev, .popular-box .slide-content .slick-next {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  z-index: 3;
+  font-size: 2rem;
+  border-radius: 50%;
+  background-color: #FF7550;
+  position: absolute;
+  top: 40%;
+  color: rgba(219, 219, 221, 0.9176470588);
+  transition: all 0.5s ease;
+}
+.popular-box .slide-content .slick-prev {
+  left: -25px;
+}
+.popular-box .slide-content .slick-next {
+  right: -25px;
+}
+.popular-box .slide-content .slick-prev:hover, .popular-box .slide-content .slick-next:hover {
+  color: #FF7550;
+  background-color: rgba(219, 219, 221, 0.9176470588);
+}
+
+/*
+    .fa{
+   color: transparent;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: red;
+ } fot makin outline of font awesome
+
+*/
+/*============WORLD-BOX==============*/
+/*============WORLD-BOX==============*/
+.world-box {
+  padding-top: 50px;
+}
+.world-box .world-image {
+  width: 50%;
+}
+.world-box .world-image img {
+  width: 100%;
+  padding: 10px;
+}
+.world-box .world-locate {
+  width: 50%;
+  padding: 10px;
+}
+.world-box .world-locate h2 img {
+  color: #000;
+}
+.world-box .world-locate p {
+  color: #986767;
+}
+.world-box .world-locate a {
+  padding: 15px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #000;
+  font-weight: 700;
+}
+.world-box .world-locate a span {
+  font-weight: 400;
+}
+.world-box .world-locate .des-button {
+  background-color: #FF7550;
+  color: #f1f1f1;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+/*============PLACES-BOX==============*/
+.places-box .place-left {
+  width: 48%;
+}
+.places-box .place-left img {
+  width: 100%;
+}
+.places-box .place-right {
+  width: 48%;
+}
+.places-box .place-right .egypt {
+  padding-bottom: 50px;
+}
+.places-box .place-right .egypt img {
+  width: 100%;
+}
+.places-box .place-right .london img {
+  width: 100%;
+}
+
+/*============OFFER-BOX==============*/
+.offer-box {
+  width: 100%;
+  padding: 200px 0;
+  min-height: 350px;
+  background-image: url(../image/jpg/bgparallax-02.jpg);
+  background-attachment: fixed;
+}
+.offer-box h2 {
+  color: #f1f1f1;
+  padding-top: 70px;
+}
+.offer-box p {
+  color: #f1f1f1;
+  padding-bottom: 70px;
+}
+.offer-box .offer-btn {
+  background-color: #FF7550;
+  color: #f1f1f1;
+}
+
+/*============TEAM-BOX==============*/
+.team-box {
+  width: 100%;
+  padding: 50px 0;
+}
+.team-box .team-head {
+  padding: 30px 20px;
+}
+.team-box .team-head p {
+  color: #787878;
+}
+.team-box .person img {
+  width: 100%;
+}
+.team-box .slide-person {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  /* .slick-arrow{
+              display: flex;
+              @extend %centerContent;
+              @extend %commonButton;
+              padding: 0;
+              width: 50px;
+              height: 50px;
+              font-size: 2rem;
+              position: absolute;
+              top: 50%;
+          }
+          .slick-prev{
+              right: -15px;
+          }
+  */
+}
+.team-box .slide-person .slick-dots {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.team-box .slide-person .slick-dots li {
+  margin-left: 15px;
+  list-style-type: none;
+}
+.team-box .slide-person .slick-dots li button {
+  padding: 10px;
+  font-size: 0;
+  background-color: #787878;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+.team-box .slide-person .slick-dots li button:hover {
+  background-color: rgba(120, 120, 120, 0.6862745098);
+}
+
+.person {
+  margin: 0 20px;
+}
+.person .person-info {
+  width: 100%;
+  padding: 10px 0;
+}
+.person .person-info .dgn {
+  width: 65%;
+}
+.person .person-info .dgn h3 {
+  color: #212121;
+}
+.person .person-info .person-icon {
+  width: 35%;
+}
+.person .person-info .person-icon .fab {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+}
+.person p {
+  color: #969696;
+}
+
+/*============PARTNERS-BOX==============*/
+.partners-box {
+  width: 100%;
+  padding: 100px 0;
+  background-image: url(../image/jpg/banner1.jpg);
+  background-attachment: fixed;
+  min-height: 350px;
+}
+.partners-box h2 {
+  color: #f1f1f1;
+  padding-top: 50px;
+}
+.partners-box .partners-logo {
+  padding: 50px 0;
+}
+.partners-box .partners-logo .brand {
+  width: 20%;
+}
+
+/*============FOOTER-BOX==============*/
+.footer-box {
+  background-color: #000000;
+  padding-top: 35px;
+}
+.footer-box .footer {
+  width: 25%;
+  padding: 20px 0 20px 10px;
+}
+.footer-box .footer h3 {
+  color: #f1f1f1;
+  font-size: 1.2rem;
+  padding-bottom: 20px;
+}
+.footer-box .footer p {
+  color: #BABABA;
+}
+.footer-box .footer ul li {
+  list-style-type: none;
+  padding-bottom: 15px;
+}
+.footer-box .footer ul a {
+  text-decoration: none;
+  color: #BABABA;
+}
+.footer-box .footer ul .email-color {
+  color: #F0D530;
+}
+.footer-box .trip-items {
+  width: 100%;
+  padding-bottom: 15px;
+}
+.footer-box .trip-items .image {
+  width: 25%;
+}
+.footer-box .trip-items .image img {
+  width: 100%;
+}
+.footer-box .trip-items .content {
+  width: 70%;
+}
+
+.footer {
+  width: 25%;
+}
+.footer .footer-icons {
+  justify-content: flex-start;
+}
+.footer .footer-icons .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+.footer .icon a {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+.footer {
+  width: 25%;
+}
+.footer .email-us {
+  width: 100%;
+  position: relative;
+}
+.footer .email-us input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 15px;
+  border-radius: 3px;
+  border: none;
+  margin: 10px 0;
+}
+.footer .email-us .email-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: #FF7550;
+  padding: 7px 18px;
+  border: none;
+  border-radius: 0 3px 3px 0;
+}
+.footer .email-us .btn-icon {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #f1f1f1;
+}
+
+.creator-box {
+  padding: 30px;
+  background-color: #161616;
+  text-align: center;
+}
+.creator-box p {
+  color: #FF7550;
+}
+.creator-box p abbr {
+  text-decoration: none;
+  color: #F0D530;
+}
+
+/*Media_query*/
+@media only screen and (min-width: 1680px) and (max-width: 1920px) {
+  /*=========COmmon-css============*/
+  html, body {
+    font-size: 24px;
+  }
+
+  .text {
+    line-height: 32px;
+  }
+
+  .popular-box .slide-content .slick-prev, .popular-box .slide-content .slick-next, .world-box .world-locate .des-button, .offer-box .offer-btn, .team-box .slide-person .slick-dots li button {
+    padding: 20px 30px;
+    font-size: 0.75rem;
+  }
+
+  .adventure-box, .world-box, .places-box, .footer-box, .creator-box {
+    padding-bottom: 80px;
+  }
+
+  .container {
+    max-width: 1470px;
+  }
+
+  /*============NAV-BOX==============*/
+  .navigation {
+    padding: 20px 50px;
+  }
+  .navigation .nav-content {
+    width: 60%;
+  }
+  .navigation .nav-content li {
+    padding-left: 35px;
+  }
+  .navigation .nav-icon {
+    width: 25%;
+  }
+  .navigation .nav-icon a {
+    margin-left: 40px;
+  }
+  .navigation .nav-icon .sing-in {
+    padding: 30px 25px;
+  }
+
+  /*============HEADER-BOX==============*/
+  .header-box .header-content {
+    padding-top: 150px;
+  }
+  .header-box .header-contact .destination select, .header-box .header-contact .type select, .header-box .header-contact .month select, .header-box .header-contact .duration select, .header-box .header-contact .contact-button select {
+    padding: 25px 30px;
+  }
+  .header-box .bg-slide img {
+    height: 850px;
+  }
+
+  /*============ADVENTTURE-BOX==============*/
+  .adventure-box .get-nature .ice-park, .adventure-box .get-nature2 .national-park, .adventure-box .get-nature2 .vacation-park, .adventure-box .popular-box, .adventure-box .offer-box, .adventure-box .partners-box {
+    padding: 120px 0;
+    margin: 10px;
+  }
+
+  /*============POPULAR-BOX==============*/
+  .popular-box .slide-content .pakages {
+    padding-bottom: 20px;
+  }
+  .popular-box .slide-content .pakages h3 {
+    padding-top: 20px;
+  }
+
+  /*============WORLD-BOX==============*/
+  /*============PLACES-BOX==============*/
+  .places-box .place-right .egypt {
+    padding-bottom: 67px;
+  }
+
+  /*============OFFER-BOX==============*/
+  .offer-box {
+    padding: 300px 0;
+  }
+
+  /*============TEAM-BOX==============*/
+  /*============PARTNERS-BOX==============*/
+  .partners-box {
+    padding: 250px 0;
+  }
+
+  /*============FOOTER-BOX==============*/
+  /*.footer{
+
+      .email-us{
+          .email-btn{
+              top: 38px;
+
+          }
+      }
+  }*/
+  .footer-box {
+    padding-top: 80px;
+  }
+  .footer-box .footer {
+    padding: 15px;
+  }
+  .footer-box .footer ul li {
+    padding-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 1270px) and (max-width: 1680px) {
+  /*=========COmmon-css============*/
+  html, body {
+    font-size: 22px;
+  }
+
+  .text {
+    line-height: 32px;
+  }
+
+  .popular-box .slide-content .slick-prev, .popular-box .slide-content .slick-next, .world-box .world-locate .des-button, .offer-box .offer-btn, .team-box .slide-person .slick-dots li button {
+    padding: 18px 25px;
+    font-size: 0.75rem;
+  }
+
+  /*============NAV-BOX==============*/
+  .navigation {
+    padding: 20px 35px;
+  }
+
+  /*============HEADER-BOX==============*/
+  .header-box .header-contact .destination select, .header-box .header-contact .type select, .header-box .header-contact .month select, .header-box .header-contact .duration select, .header-box .header-contact .contact-button select {
+    padding: 20px 25px;
+  }
+  .header-box .bg-slide img {
+    height: 750px;
+  }
+
+  /*============ADVENTTURE-BOX==============*/
+  .adventure-box .get-nature .ice-park, .adventure-box .get-nature2 .national-park, .adventure-box .get-nature2 .vacation-park, .adventure-box .popular-box, .adventure-box .offer-box, .adventure-box .partners-box {
+    padding: 100px 0;
+    margin: 10px;
+  }
+
+  /*============POPULAR-BOX==============*/
+  /*============WORLD-BOX==============*/
+  /*============PLACES-BOX==============*/
+  .places-box .place-right .london {
+    margin-top: 5px;
+  }
+
+  /*============OFFER-BOX==============*/
+  /*============TEAM-BOX==============*/
+  /*============PARTNERS-BOX==============*/
+  .partners-box {
+    padding: 200px 0;
+  }
+
+  /*============FOOTER-BOX==============*/
+  .footer-box .footer {
+    padding: 15px;
+  }
+  .footer-box .footer ul li {
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 920px) {
+  /*===========Common-box========*/
+  html, body {
+    font-size: 16px;
+  }
+
+  .text {
+    line-height: 24px;
+  }
+
+  .popular-box .slide-content .slick-prev, .popular-box .slide-content .slick-next, .world-box .world-locate .des-button, .offer-box .offer-btn, .team-box .slide-person .slick-dots li button {
+    padding: 15px 20px;
+  }
+
+  .small-head {
+    font-size: 1.2rem;
+  }
+
+  /*============NAV-BOX==============*/
+  .navigation .nav-content {
+    display: none;
+    width: 200px;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    right: 100px;
+    z-index: 1;
+    background-color: #f1f1f1;
+  }
+  .navigation .nav-content li {
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(33, 33, 33, 0.2392156863);
+  }
+  .navigation .nav-logo {
+    order: 1;
+  }
+  .navigation .nav-bar-btn {
+    width: 7%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navigation .nav-icon {
+    width: 70%;
+    order: 2;
+  }
+
+  /*============HEADER-BOX==============*/
+  .header-box .header-content h2 {
+    font-size: 3rem;
+  }
+  .header-box .header-contact {
+    padding-right: 30px;
+  }
+
+  /*============ADVENTTURE-BOX==============*/
+  .adventure-box .get-benefits .benefits {
+    padding: 5px;
+  }
+  .adventure-box .get-benefits .benefits p {
+    text-indent: 20px;
+  }
+
+  /*============POPULAR-BOX==============*/
+  /*============WORLD-BOX==============*/
+  .world-box .world-image {
+    width: 100%;
+  }
+  .world-box .world-locate {
+    width: 100%;
+  }
+  .world-box .world-locate .button-box {
+    text-align: center;
+  }
+
+  /*============PLACES-BOX==============*/
+  .places-box .place-left {
+    width: 100%;
+  }
+  .places-box .place-left img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .places-box .place-right {
+    width: 100%;
+  }
+  .places-box .place-right .egypt {
+    padding-bottom: 0;
+  }
+
+  /*============OFFER-BOX==============*/
+  .offer-box {
+    padding: 150px 0;
+  }
+
+  /*============TEAM-BOX==============*/
+  /*============PARTNERS-BOX==============*/
+  .partners-box {
+    padding: 180px 0;
+  }
+
+  /*============FOOTER-BOX==============*/
+  .footer-box {
+    padding-top: 50px;
+  }
+  .footer-box .footer {
+    width: 50%;
+    padding: 30px;
+  }
+  .footer-box .trip-items {
+    padding-bottom: 25px;
+  }
+
+  .footer .email-us .email-btn {
+    padding: 10px 22px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+  body .text {
+    line-height: 24px;
+  }
+  body .popular-box .slide-content .slick-prev, .popular-box .slide-content body .slick-prev, body .popular-box .slide-content .slick-next, .popular-box .slide-content body .slick-next, body .world-box .world-locate .des-button, .world-box .world-locate body .des-button, body .offer-box .offer-btn, .offer-box body .offer-btn, body .team-box .slide-person .slick-dots li button, .team-box .slide-person .slick-dots li body button {
+    padding: 15px 20px;
+  }
+  body .text {
+    line-height: 24px;
+  }
+  body .big-head {
+    font-size: 1.8rem;
+  }
+  body .medium-head {
+    font-size: 1.5rem;
+  }
+  body .small-head {
+    font-size: 1.2rem;
+  }
+
+  /*============NAV-BOX==============*/
+  .navigation .nav-logo {
+    width: 20%;
+  }
+  .navigation .nav-bar-btn {
+    width: 7%;
+  }
+  .navigation .nav-icon {
+    width: 70%;
+  }
+
+  /*============HEADER-BOX==============*/
+  .header-box .header-contact .destination, .header-box .header-contact .type, .header-box .header-contact .month, .header-box .header-contact .duration, .header-box .header-contact .contact-button {
+    width: 48%;
+    margin-top: 10px;
+  }
+  .header-box .header-contact .destination select, .header-box .header-contact .type select, .header-box .header-contact .month select, .header-box .header-contact .duration select, .header-box .header-contact .contact-button select {
+    padding: 15px;
+  }
+  .header-box .header-content {
+    padding: 180px 0 20px 0;
+  }
+  .header-box .header-content h1 {
+    font-size: 2.5rem;
+  }
+  .header-box .header-content h2 {
+    font-size: 2.5rem;
+  }
+
+  /*============ADVENTTURE-BOX==============*/
+  .adventure-box .get-nature {
+    width: 80%;
+    padding-bottom: 0;
+    margin: 0 auto;
+  }
+  .adventure-box .get-nature .ice-park {
+    padding: 80px 0;
+  }
+  .adventure-box .get-nature2 {
+    width: 80%;
+    padding-top: 0;
+    margin: 0 auto;
+  }
+  .adventure-box .get-nature2 .national-park, .adventure-box .get-nature2 .vacation-park {
+    padding: 100px 0;
+  }
+  .adventure-box .get-benefits .benefits {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .adventure-box .get-benefits .benefits p {
+    text-indent: 20px;
+  }
+
+  /*============POPULAR-BOX==============*/
+  .popular-box .slide-content .pakages p {
+    padding: 0;
+  }
+
+  /*============WORLD-BOX==============*/
+  /*============PLACES-BOX==============*/
+  .places-box .place-left img {
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  /*============OFFER-BOX==============*/
+  .offer-box {
+    padding: 100px 0;
+  }
+
+  /*============TEAM-BOX==============*/
+  /*============PARTNERS-BOX==============*/
+  .partners-box {
+    padding: 120px 0;
+  }
+  .partners-box h2 {
+    padding-top: 30px;
+  }
+  .partners-box .partners-logo .brand {
+    width: 30%;
+    padding-top: 30px;
+  }
+
+  /*============FOOTER-BOX==============*/
+  .footer-box {
+    padding: 50px;
+  }
+  .footer-box .footer {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .popular-box .slide-content .slick-prev, .popular-box .slide-content .slick-next, .world-box .world-locate .des-button, .offer-box .offer-btn, .team-box .slide-person .slick-dots li button {
+    padding: 12px 18px;
+  }
+
+  /*============NAV-BOX==============*/
+  .navigation .nav-logo {
+    width: 20%;
+  }
+  .navigation .nav-bar-btn {
+    width: 10%;
+  }
+  .navigation .nav-icon {
+    width: 65%;
+  }
+
+  /*============HEADER-BOX==============*/
+  .header-box .header-contact .destination, .header-box .header-contact .type, .header-box .header-contact .month, .header-box .header-contact .duration, .header-box .header-contact .contact-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .header-box .header-contact .destination select, .header-box .header-contact .type select, .header-box .header-contact .month select, .header-box .header-contact .duration select, .header-box .header-contact .contact-button select {
+    padding: 10px;
+  }
+  .header-box .header-contact .contact-button {
+    text-align: center;
+  }
+  .header-box .header-content {
+    padding: 100px 0 20px 0;
+  }
+  .header-box .header-content h1 {
+    font-size: 2rem;
+  }
+  .header-box .header-content h2 {
+    font-size: 2.2rem;
+  }
+  .header-box .bg-slide img {
+    height: 700px;
+  }
+
+  /*============ADVENTTURE-BOX==============*/
+  .adventure-box {
+    padding: 0;
+  }
+  .adventure-box .get-nature, .adventure-box .get-nature2, .adventure-box .get-benefits {
+    width: 100%;
+  }
+  .adventure-box .get-benefits .benefits {
+    width: 90%;
+  }
+
+  /*============POPULAR-BOX==============*/
+  .popular-box .slide-content .pakages {
+    padding-bottom: 20px;
+  }
+  .popular-box .slide-content .pakages h3 {
+    padding-top: 20px;
+  }
+  .popular-box .slide-content .pakages p {
+    padding: 10px;
+  }
+
+  /*============WORLD-BOX==============*/
+  /*============PLACES-BOX==============*/
+  .places-box .place-left img {
+    height: 300px;
+  }
+
+  /*============OFFER-BOX==============*/
+  .offer-box {
+    padding: 70px 0;
+  }
+  .offer-box h2 {
+    padding-top: 30px;
+  }
+  .offer-box p {
+    padding-bottom: 50px;
+  }
+
+  /*============TEAM-BOX==============*/
+  /*============PARTNERS-BOX==============*/
+  .partners-box {
+    padding: 70px 0;
+  }
+  .partners-box h2 {
+    padding-top: 20px;
+  }
+  .partners-box .partners-logo .brand {
+    width: 50%;
+    padding-top: 30px;
+  }
+
+  /*============FOOTER-BOX==============*/
+  .footer-box .footer {
+    padding: 30px 0 0 0;
+  }
+  .footer-box .footer h3 {
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /**/
+  .container {
+    width: 100%;
+  }
+
+  .big-head {
+    font-size: 1.5rem;
+  }
+
+  .medium-head {
+    font-size: 1.2rem;
+  }
+
+  .small-head {
+    font-size: 1rem;
+  }
+
+  .popular-box .slide-content .slick-prev, .popular-box .slide-content .slick-next, .world-box .world-locate .des-button, .offer-box .offer-btn, .team-box .slide-person .slick-dots li button {
+    padding: 8px 15px;
+  }
+
+  /*============NAV-BOX==============*/
+  .navigation .nav-logo {
+    width: 30%;
+  }
+  .navigation .nav-icon {
+    width: 55%;
+  }
+  .navigation .nav-icon a {
+    margin-left: 10px;
+  }
+
+  /*============HEADER-BOX==============*/
+  .header-box .header-content {
+    padding: 120px 0 20px 0;
+  }
+  .header-box .header-content h1 {
+    font-size: 1.8rem;
+  }
+  .header-box .header-content h2 {
+    font-size: 2rem;
+  }
+
+  /*============ADVENTTURE-BOX==============*/
+  .adventure-box .get-nature .ice-park {
+    padding: 60px;
+  }
+  .adventure-box .get-nature2 .national-park, .adventure-box .get-nature2 .vacation-park {
+    padding: 80px;
+  }
+  .adventure-box .get-benefits {
+    padding: 10px 0;
+  }
+  .adventure-box .get-benefits .benefits {
+    padding-top: 0;
+    width: 100%;
+  }
+
+  /*============POPULAR-BOX==============*/
+  /*============WORLD-BOX==============*/
+  .world-box .world-locate a {
+    padding: 8px 12px;
+  }
+
+  /*============PLACES-BOX==============*/
+  .places-box .place-left img {
+    height: 250px;
+  }
+
+  /*============OFFER-BOX==============*/
+  .offer-box {
+    padding: 50px 0;
+  }
+  .offer-box h2 {
+    padding-top: 20px;
+  }
+  .offer-box p {
+    padding-bottom: 30px;
+  }
+
+  /*============TEAM-BOX==============*/
+  /*============PARTNERS-BOX==============*/
+  .partners-box {
+    padding: 50px 0 0 0;
+  }
+  .partners-box h2 {
+    padding-top: 10px;
+  }
+  .partners-box .partners-logo .brand {
+    width: 100%;
+    padding-top: 15px;
+  }
+
+  /*============FOOTER-BOX==============*/
+  .footer-box {
+    padding: 50px 20px 20px 20px;
+  }
+  .footer-box .footer {
+    padding: 0 0 10px 0;
+  }
+}
+@media only screen and (max-width: 380px) {
+  /*============NAV-BOX==============*/
+  /*============HEADER-BOX==============*/
+  .header-box {
+    padding-bottom: 10px;
+  }
+  .header-box .header-content {
+    padding: 100px 0 20px 0;
+  }
+  .header-box .header-content h1 {
+    font-size: 1.5rem;
+  }
+  .header-box .header-content h2 {
+    font-size: 1.8rem;
+  }
+
+  /*============ADVENTTURE-BOX==============*/
+  /*============POPULAR-BOX==============*/
+  .popular-box {
+    padding: 70px 0;
+  }
+  .popular-box .slide-content .pakages {
+    padding-bottom: 10px;
+  }
+  .popular-box .slide-content .pakages h3 {
+    padding-top: 10px;
+  }
+  .popular-box .slide-content .pakages p {
+    padding: 0;
+  }
+
+  /*============WORLD-BOX==============*/
+  .world-box .world-locate a {
+    padding: 8px 10px;
+  }
+
+  /*============PLACES-BOX==============*/
+  .places-box .place-left img {
+    height: 200px;
+  }
+
+  /*============OFFER-BOX==============*/
+  /*============TEAM-BOX==============*/
+  /*============PARTNERS-BOX==============*/
+  /*============FOOTER-BOX==============*/
+}
+/*==========Animation=============*/
+/*@import "animation";*/
+.nav-content li a:hover {
+  color: #f1f1f1;
+}
+.nav-content li a::before {
+  content: " ";
+  width: 0;
+  height: 100%;
+  background-color: #FF7550;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.5s linear;
+  z-index: -1;
+}
+.nav-content li a::after {
+  content: " ";
+  width: 0;
+  height: 100%;
+  background-color: #FF7550;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.5s linear;
+}
+.nav-content li a:hover:before {
+  background-color: #FF7550;
+  width: 100%;
+  transition: all 0.5s linear;
+}
+.nav-content li a:hover:after {
+  background-color: #FF7550;
+  transition: all 0.5s linear;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

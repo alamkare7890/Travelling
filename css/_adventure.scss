@@ -1,0 +1,96 @@
+/*============ADVENTTURE-BOX==============*/
+%bgProperty{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+}
+
+.adventure-box{
+   @extend %section;
+    padding-top: 50px;
+
+    .get-nature{
+        width: 50%;
+        padding: 30px 0;
+        display: grid;
+        grid-template-columns: 100%;
+        color: #f1f1f1;
+    
+        .ice-park{
+            @extend %bgProperty;
+            background-image: url(../image/jpg/iimg0.jpg);
+            padding: 150px 0;
+            margin: 5px;
+            @extend %centerContent;        
+            h2{
+                font-family: 'Caveat Brush', cursive;
+            }
+           
+
+        }
+    }
+
+    .get-nature2{
+        width: 50%;
+        padding: 30px 0;
+        color: #f1f1f1;
+
+
+        .national-park{
+            @extend %bgProperty;
+            background-image: url(../image/jpg/banner3.jpg);
+            padding: 70px 0;
+            @extend %centerContent;        
+            margin: 5px;
+
+            h2{
+                font-family: 'Caveat Brush', cursive;
+
+            }
+
+        }
+        .vacation-park{
+            @extend %bgProperty;
+            background-image: url(../image/jpg/banner.jpg);
+            padding: 70px 0;
+            @extend %centerContent;        
+            margin: 5px;
+
+            h2{
+                font-family: 'Caveat Brush', cursive;
+            }
+
+        }   
+
+
+
+    }
+
+    .get-benefits{
+        padding: 30px 0;
+
+        .benefits{
+            width: 33%;
+            padding: 10px;
+        
+            .hight-lite{
+                color: #FF7550;
+                font-weight: 500;
+                padding-right: 10px;
+            }
+            p{
+                text-indent: 25px;
+                color: #9B9B9B;
+            }
+
+
+        }
+    }
+    
+
+
+
+
+}

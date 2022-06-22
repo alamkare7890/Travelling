@@ -1,0 +1,133 @@
+.footer-box{
+    @extend %section;
+    background-color: #000000;
+    padding-top: 35px;
+    .footer{
+        width: 25%;
+        padding: 20px 0 20px 10px;
+
+        h3{
+            color: #f1f1f1;
+            font-size: 1.2rem;
+            padding-bottom: 20px;
+        }
+        p{
+            color: #BABABA;
+        }
+
+        ul{
+            li{
+                list-style-type: none;  
+                padding-bottom: 15px;
+            }
+            a{
+                text-decoration: none;      
+                color: #BABABA;
+            }
+            .email-color{
+                color: #F0D530;
+
+            }
+        }
+
+    }
+ 
+    .trip-items{
+        width: 100%;
+        padding-bottom: 15px;
+        .image{
+            width: 25%;
+            img{
+                width: 100%;
+            }
+        }
+        .content{
+            width: 70%;
+        }
+
+    }
+
+}
+.footer{
+    width: 25%;
+   .footer-icons{
+        justify-content: flex-start;
+        .icon{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #f1f1f1;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+
+        }
+
+    }
+
+    .icon{
+
+        a{
+            color: transparent;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgb(0, 0, 0);
+        }
+
+    }
+}
+.footer{
+    width: 25%;
+    .email-us{
+        width: 100%;
+        position: relative;
+
+
+        input{
+            width: 100%;
+            font-size: 1rem;
+            padding: 15px;
+            border-radius: 3px;
+            border: none;
+            margin: 10px 0; 
+
+        }
+        
+        .email-btn{
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            background-color: #FF7550;
+            padding: 7px 18px;
+            border: none;
+            border-radius: 0 3px 3px 0;
+
+        }
+
+        .btn-icon{
+                color: transparent;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #f1f1f1;
+        }
+    }
+
+
+
+}
+.creator-box{
+    @extend %section;
+    padding: 30px;
+    background-color: #161616;
+    text-align: center;
+
+    p{
+        color: #FF7550;
+        abbr{
+            text-decoration: none;
+            color: #F0D530;
+
+        }
+
+    }
+
+}

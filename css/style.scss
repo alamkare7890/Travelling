@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+html,body{
+    width: 100%;
+    height: 100%;  
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Caveat Brush', cursive;*/
+    scroll-behavior: smooth;
+}
+    .container{
+        width: 95%;
+        margin: 0 auto;
+        max-width: 1270px;
+    }
+    .flex-box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .space{
+        justify-content: space-between;
+    }
+    .big-head{
+        font-size: 2.5rem;
+        font-weight: 800;
+        padding-bottom: 10px;
+    }
+    .medium-head{
+        font-size: 2rem;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+    .small-head{
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+    .text{
+        font-size: 1rem;
+        padding-bottom: 10px;
+        line-height: 26px;
+    }
+    %commonButton{
+        padding: 15px 20px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem;
+        text-transform: uppercase;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .dollor{
+        color: #FF7550;
+        font-weight: 700;
+
+    }
+    %bgProperty{
+        background-position: center;
+        background-size: 150%;
+        background-repeat: no-repeat;
+        text-align: center;
+    
+    }
+    %section{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    %centerContent{
+        align-items: center;
+        justify-content: center
+    }
+
+/*============NAV-BOX==============*/
+/*============HEADER-BOX==============*/
+/*============ADVENTTURE-BOX==============*/
+/*============POPULAR-BOX==============*/
+/*============WORLD-BOX==============*/
+/*============PLACES-BOX==============*/
+/*============OFFER-BOX==============*/
+/*============TEAM-BOX==============*/
+/*============PARTNERS-BOX==============*/
+/*============FOOTER-BOX==============*/
+
+/*============NAV-BOX==============*/
+@import "nav"; 
+/*============HEADER-BOX==============*/
+@import "header";
+/*============ADVENTTURE-BOX==============*/
+@import "adventure";
+/*============POPULAR-BOX==============*/
+@import "popular";
+/*============WORLD-BOX==============*/
+@import "world";
+/*============PLACES-BOX==============*/
+@import "places";
+/*============OFFER-BOX==============*/
+@import "offer";
+/*============TEAM-BOX==============*/
+@import "team";
+/*============PARTNERS-BOX==============*/
+@import "partners";
+/*============FOOTER-BOX==============*/
+@import "footer";
+
+/*Media_query*/
+@import "media-query";
+
+/*==========Animation=============*/
+
+/*@import "animation";*/
+
+.nav-content {
+
+    li {
+
+        a:hover{
+            color: #f1f1f1;
+        }   
+
+        a::before{
+            content: " ";
+            width: 0;
+            height: 100%;
+            background-color: #FF7550;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: all 0.5s linear;
+            z-index: -1;
+
+        }
+
+        a::after{
+            content: " ";
+            width: 0;
+            height: 100%;
+            background-color: #FF7550;  
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+
+            transition: all 0.5s linear;
+        }
+
+        a:hover:before{
+            background-color: #FF7550;
+            width: 100%;
+            transition: all 0.5s linear;
+
+        }
+
+        a:hover:after{
+            background-color: #FF7550;
+            transition: all 0.5s linear;
+            width: 100%;
+        }
+    }
+
+}
+
+
+
+
+

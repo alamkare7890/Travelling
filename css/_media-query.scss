@@ -1,0 +1,893 @@
+@media only screen and (min-width:1680px) and (max-width:1920px){
+    /*=========COmmon-css============*/
+    html,body{
+        font-size: 24px;
+    }
+    .text{
+        line-height: 32px;
+    }
+    %commonButton{
+        padding: 20px 30px;
+        font-size: .75rem;
+    }
+    %section{
+        padding-bottom: 80px;
+    }
+    .container{
+        max-width: 1470px;
+    }
+       
+    /*============NAV-BOX==============*/
+    .navigation{
+        padding: 20px 50px;
+
+        .nav-content{
+            width: 60%;
+            li{
+                padding-left: 35px;
+               
+            }
+        }
+
+        .nav-icon{
+            width: 25%;
+            a{
+                margin-left: 40px;
+            }
+            .sing-in{
+                padding: 30px 25px;
+            }
+        }
+    }
+    /*============HEADER-BOX==============*/
+    .header-box{
+        .header-content{
+            padding-top: 150px;
+
+        }
+        .header-contact{
+            .destination, .type, .month , .duration, .contact-button{
+
+                select{
+                    padding: 25px 30px;
+                }
+            }
+        }  
+        .bg-slide{
+
+            img{
+                height: 850px;
+            }
+        }
+
+    }
+    /*============ADVENTTURE-BOX==============*/
+    .adventure-box{
+
+        %bgProperty{
+            padding: 120px 0;
+            margin: 10px;
+        }
+    }
+    /*============POPULAR-BOX==============*/
+    .popular-box{
+
+        .slide-content{
+
+            .pakages{
+                padding-bottom: 20px;
+
+                h3{
+                    padding-top: 20px;
+                }
+            }
+        }
+
+    }
+
+
+
+    /*============WORLD-BOX==============*/
+    /*============PLACES-BOX==============*/
+    .places-box{
+    
+        .place-right{
+
+            .egypt{
+                padding-bottom: 67px;
+            } 
+        }   
+    }
+    /*============OFFER-BOX==============*/
+    .offer-box{
+        padding: 300px 0;
+    }
+    /*============TEAM-BOX==============*/
+   
+
+
+
+    
+    
+
+
+    /*============PARTNERS-BOX==============*/
+    .partners-box{
+        padding: 250px 0;
+    }
+    /*============FOOTER-BOX==============*/
+    /*.footer{
+
+        .email-us{
+            .email-btn{
+                top: 38px;
+
+            }
+        }
+    }*/
+    .footer-box{
+            padding-top: 80px;
+
+        .footer{
+            padding: 15px;
+            ul li{
+                padding-bottom: 25px;
+            }
+
+        }
+    }
+}
+@media only screen and (min-width:1270px) and (max-width:1680px){
+    /*=========COmmon-css============*/
+    html,body{
+        font-size: 22px;
+    }
+        .text{
+            line-height: 32px;
+        }
+
+        %commonButton{
+            padding: 18px 25px;
+            font-size: 0.75rem;
+        }
+    
+    /*============NAV-BOX==============*/
+    .navigation{
+        padding: 20px 35px;
+    }
+    /*============HEADER-BOX==============*/
+    .header-box{
+    
+        .header-contact{
+
+            .destination, .type, .month , .duration, .contact-button{
+
+                select{
+                    padding: 20px 25px;
+
+                }
+            }
+        }   
+
+        .bg-slide{
+
+            img{
+                height: 750px;
+            }
+        }
+    }
+    /*============ADVENTTURE-BOX==============*/
+    .adventure-box{
+        %bgProperty{
+            padding: 100px 0;
+            margin: 10px;
+        }
+    }
+    /*============POPULAR-BOX==============*/
+    /*============WORLD-BOX==============*/
+    /*============PLACES-BOX==============*/
+    .places-box{
+    
+        .place-right{
+
+            .london{
+                margin-top: 5px;
+            }
+            
+        }   
+    }
+    /*============OFFER-BOX==============*/
+    /*============TEAM-BOX==============*/
+    /*============PARTNERS-BOX==============*/
+    .partners-box{
+        padding: 200px 0;
+    }
+    /*============FOOTER-BOX==============*/
+    .footer-box{
+
+        .footer{
+            padding: 15px;
+
+            ul li{
+                padding-bottom: 20px;
+            }
+
+        }
+    }
+}
+@media only screen and (max-width:920px){
+    /*===========Common-box========*/
+    html,body{
+        font-size: 16px;
+    }
+    .text{
+        line-height: 24px;
+    }
+    %commonButton{
+        padding: 15px 20px;
+    }
+    .small-head{
+        font-size: 1.2rem;
+    }
+    
+    
+    /*============NAV-BOX==============*/
+    .navigation{
+        .nav-content{
+            display: none;
+            width: 200px;
+            align-items: flex-start;
+            flex-direction: column;
+            position: absolute;
+                top: 90px;
+                right: 100px;
+            z-index: 1;
+            background-color: #f1f1f1;
+
+            li{
+                padding: 15px 10px;
+                border-bottom: 1px solid #2121213d;
+            }
+        }
+        .nav-logo{
+            order: 1;
+        }
+        
+        .nav-bar-btn{
+            width: 7%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .nav-icon{
+            width: 70%;
+            order: 2;
+            
+
+        }
+    }
+    /*============HEADER-BOX==============*/
+    .header-box{
+    
+        .header-content{
+            h2{
+                font-size: 3rem;
+            }
+        }
+        .header-contact{
+
+            padding-right: 30px;
+
+        }
+    }
+    /*============ADVENTTURE-BOX==============*/
+    .adventure-box{
+        .get-benefits{
+
+            .benefits{
+                padding: 5px;
+                p{
+                    text-indent: 20px;
+                }
+            }
+        }
+    }
+
+    /*============POPULAR-BOX==============*/
+    /*============WORLD-BOX==============*/
+    .world-box{
+
+        .world-image{
+            width: 100%;
+
+        }
+
+        .world-locate{
+            width: 100%;
+
+            .button-box{
+                text-align: center;
+            }
+        }
+    }
+    /*============PLACES-BOX==============*/
+    .places-box{
+
+        .place-left{
+            width: 100%;
+            img{
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+            }
+        }
+
+        .place-right{
+            width: 100%;
+            .egypt{
+                padding-bottom: 0;
+            }
+        }   
+    }
+    /*============OFFER-BOX==============*/
+    .offer-box{
+        padding: 150px 0;
+
+    }
+    /*============TEAM-BOX==============*/
+    /*============PARTNERS-BOX==============*/
+    .partners-box{
+        padding: 180px 0;
+    }
+    /*============FOOTER-BOX==============*/
+    .footer-box{ 
+        padding-top: 50px ;
+        .footer{
+            width: 50%;
+            padding: 30px; 
+        }
+
+        .trip-items{
+            padding-bottom: 25px;
+        }
+    }
+    .footer{
+
+        .email-us{
+            .email-btn{
+                padding: 10px 22px;
+
+            }
+        }
+    }
+
+
+
+}
+@media only screen and (max-width:768px){
+    body{
+        font-size: 15px;
+        .text{
+            line-height: 24px;
+        }
+        %commonButton{
+        padding: 15px 20px;
+        } 
+
+        .text{
+            line-height: 24px;
+        }
+
+        .big-head{
+            font-size: 1.8rem;
+        }
+        .medium-head{
+            font-size: 1.5rem;
+        }
+        .small-head{
+            font-size: 1.2rem;
+            
+        }
+    }
+/*============NAV-BOX==============*/
+    .navigation{
+
+        .nav-logo{
+            width: 20%;
+        }
+
+        .nav-bar-btn{
+            width: 7%;
+        }
+
+        .nav-icon{
+            width: 70%;
+
+            
+        }
+    }
+/*============HEADER-BOX==============*/
+    .header-box{
+
+        .header-contact{
+
+            .destination, .type, .month , .duration, .contact-button{
+                width: 48%;
+                margin-top: 10px;
+
+                select{
+                    padding: 15px;
+                }           
+            }  
+        }
+        .header-content{
+            padding: 180px 0 20px 0;
+            h1{
+                font-size: 2.5rem;
+            }
+            h2{
+                font-size: 2.5rem;
+            }
+        }              
+    }
+
+/*============ADVENTTURE-BOX==============*/
+    .adventure-box{
+
+        .get-nature{
+            width: 80%;
+            padding-bottom: 0;
+            margin:  0  auto;
+            .ice-park{
+                padding: 80px 0;
+            }
+        }
+
+        .get-nature2{
+            width: 80%;
+            padding-top: 0;
+            margin:  0  auto;
+
+            .national-park, .vacation-park{
+                padding: 100px 0;
+            }
+        }
+
+        .get-benefits{
+
+            .benefits{
+                width: 80%;
+                margin: 0 auto;
+                padding: 20px;
+                p{
+                    text-indent: 20px;
+                }
+            }
+        }
+    }
+    /*============POPULAR-BOX==============*/
+    .popular-box{
+
+        .slide-content{
+
+            .pakages{
+
+                p{
+                    padding: 0;
+                }
+            }
+        }
+
+    }
+    /*============WORLD-BOX==============*/
+    /*============PLACES-BOX==============*/
+    .places-box{
+
+        .place-left{
+            img{
+                height: 350px;
+                object-fit: cover;
+            }
+        }
+
+    }
+    /*============OFFER-BOX==============*/
+    .offer-box{
+        padding: 100px 0;
+
+    }
+    /*============TEAM-BOX==============*/
+    /*============PARTNERS-BOX==============*/
+    .partners-box{
+        padding: 120px 0;
+
+        h2{
+            padding-top: 30px;
+        }
+
+        .partners-logo{
+
+            .brand{
+                width: 30%;
+                padding-top: 30px;
+
+            }
+        }
+    }
+    /*============FOOTER-BOX==============*/
+    .footer-box{ 
+        padding: 50px;
+
+        .footer{
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width:576px){
+    %commonButton{
+        padding: 12px 18px;
+    } 
+    /*============NAV-BOX==============*/
+    .navigation{
+
+        .nav-logo{
+            width: 20%;
+        }
+
+        .nav-bar-btn{
+            width: 10%;
+        }
+
+        .nav-icon{
+            width: 65%;
+        }
+    }
+
+
+
+
+    /*============HEADER-BOX==============*/
+    .header-box{
+
+        .header-contact{
+
+            .destination, .type, .month , .duration, .contact-button{
+                width: 100%;
+                margin-top: 10px;
+
+                select{
+                    padding: 10px;
+                }
+            }  
+            .contact-button{
+                text-align: center;
+            }
+
+        }
+
+        .header-content{
+            padding: 100px 0 20px 0;
+            h1{
+                font-size: 2rem;
+
+            }
+
+            h2{
+                font-size: 2.2rem;
+            }
+        }
+
+        .bg-slide{
+
+            img{
+                height: 700px;
+            }
+        }
+    }
+
+    /*============ADVENTTURE-BOX==============*/
+    .adventure-box{
+            padding: 0;
+        .get-nature, .get-nature2,.get-benefits{
+            width: 100%;
+
+        }
+
+        .get-benefits{
+
+            .benefits{
+                width: 90%;
+            }
+
+        }
+
+    }
+
+
+    /*============POPULAR-BOX==============*/
+    .popular-box{
+
+        .slide-content{
+
+            .pakages{
+                padding-bottom: 20px;
+
+                h3{
+                    padding-top: 20px;
+                }
+               p{
+                    padding: 10px;
+                }
+            }
+        }
+
+    }
+    /*============WORLD-BOX==============*/
+
+    /*============PLACES-BOX==============*/
+    .places-box{
+
+        .place-left{
+            img{
+                height: 300px;
+            }
+        }
+
+    }
+    /*============OFFER-BOX==============*/
+    .offer-box{
+        padding: 70px 0;
+
+        h2{
+            padding-top: 30px;
+        }
+
+        p{
+            padding-bottom: 50px;
+        }
+    }
+    /*============TEAM-BOX==============*/
+    /*============PARTNERS-BOX==============*/
+    .partners-box{
+        padding: 70px 0;
+
+        h2{
+            padding-top: 20px;
+        }
+
+        .partners-logo{
+
+            .brand{
+                width: 50%;
+                padding-top: 30px;
+
+            }
+        }
+    }
+    /*============FOOTER-BOX==============*/
+    .footer-box{
+
+        .footer{
+            padding: 30px 0 0 0;
+
+            h3{
+                padding-bottom: 10px;
+            }
+
+        }
+    }
+
+}
+@media only screen and (max-width:480px){
+/**/
+    .container{
+        width: 100%;
+    }
+    .big-head{
+        font-size: 1.5rem;
+    }
+    .medium-head{
+        font-size: 1.2rem;
+    }
+    .small-head{
+        font-size: 1rem;  
+    }
+    %commonButton{
+        padding: 8px 15px;
+    }
+
+    /*============NAV-BOX==============*/
+    .navigation{
+
+        .nav-logo{
+            width: 30%;
+        }
+        .nav-icon{
+            width: 55%;
+
+            a{
+                margin-left: 10px;
+            }
+            
+        }
+    }
+
+
+
+
+    /*============HEADER-BOX==============*/
+    .header-box{
+
+        .header-content{
+            padding: 120px 0 20px 0;
+
+            h1{
+                font-size: 1.8rem;
+
+            }
+
+            h2{
+                font-size: 2rem;
+            }
+        }
+    }
+
+
+    /*============ADVENTTURE-BOX==============*/
+    .adventure-box{
+
+        .get-nature{
+
+            .ice-park{
+                padding: 60px;
+
+            }
+        }   
+        .get-nature2{
+
+            .national-park, .vacation-park{
+                padding: 80px;
+            }
+
+        }
+
+        .get-benefits{
+            padding: 10px 0;
+            .benefits{
+                padding-top: 0;
+                width: 100%;
+            }
+
+        }
+    }
+
+    /*============POPULAR-BOX==============*/
+    /*============WORLD-BOX==============*/
+    .world-box{
+
+        .world-locate{
+
+            a{
+                padding: 8px 12px;
+            }
+        }
+
+    }
+    /*============PLACES-BOX==============*/
+    .places-box{
+
+        .place-left{
+            img{
+                height: 250px;
+            }
+        }
+
+    }
+    /*============OFFER-BOX==============*/
+    .offer-box{
+        padding: 50px 0;
+
+        h2{
+            padding-top: 20px;
+        }
+        p{
+            padding-bottom: 30px;
+        }
+    }
+    /*============TEAM-BOX==============*/
+    /*============PARTNERS-BOX==============*/
+    .partners-box{
+        padding: 50px 0 0 0;
+
+        h2{
+            padding-top: 10px;
+        }
+
+        .partners-logo{
+
+            .brand{
+                width: 100%;
+                padding-top: 15px;
+
+            }
+        }
+
+    }
+    /*============FOOTER-BOX==============*/
+    .footer-box{ 
+        padding: 50px 20px 20px 20px;
+
+        .footer{
+            padding:0 0 10px 0;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width:380px){
+    /*============NAV-BOX==============*/
+    /*============HEADER-BOX==============*/
+    .header-box{
+        padding-bottom: 10px;
+
+        .header-content{
+            padding: 100px 0 20px 0;
+
+            h1{
+                font-size: 1.5rem;
+
+            }
+
+            h2{
+                font-size: 1.8rem;
+            }
+        }
+    }
+    /*============ADVENTTURE-BOX==============*/
+    /*============POPULAR-BOX==============*/
+    .popular-box{
+        padding: 70px 0;
+        .slide-content{
+
+            .pakages{
+                padding-bottom: 10px;
+
+                h3{
+                    padding-top: 10px;
+                }
+               p{
+                    padding: 0;
+                }
+            }
+        }
+
+    }
+    /*============WORLD-BOX==============*/
+    .world-box{
+
+        .world-locate{
+
+            a{
+                padding: 8px 10px;
+            }
+        }
+
+    }
+    /*============PLACES-BOX==============*/
+    .places-box{
+
+        .place-left{
+            img{
+                height: 200px;
+            }
+        }
+
+    }
+    /*============OFFER-BOX==============*/
+    /*============TEAM-BOX==============*/
+    /*============PARTNERS-BOX==============*/
+    /*============FOOTER-BOX==============*/
+
+}   
