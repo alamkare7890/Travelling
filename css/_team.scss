@@ -93,6 +93,12 @@
                 -webkit-text-stroke-width: 1px;
                 -webkit-text-stroke-color: rgb(0, 0, 0);
                 font-size: 1.2rem;
+                transition: 0.3s;
+            }
+            .fab:hover{
+                color: #FF7550;
+                -webkit-text-stroke-color: #ff7550;
+
             }
         }
     }

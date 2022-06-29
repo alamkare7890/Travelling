@@ -145,14 +145,16 @@ html, body {
   top: 80px;
   text-align: left;
   z-index: 5;
-  width: 300px;
+  width: 180px;
 }
 .navigation .nav-toggler li {
   display: flex;
+  padding-left: 10px;
   justify-content: space-between;
   align-items: center;
   background-color: #FF7550;
-  border-bottom: 1px solid #f1f1f1;
+  transition: all 0.4s linear;
+  transform: translateX(-145px);
 }
 .navigation .nav-toggler li span {
   display: flex;
@@ -164,23 +166,61 @@ html, body {
 }
 .navigation .nav-toggler li a {
   display: flex;
-  justify-content: space-between;
   text-decoration: none;
   color: #333333;
+}
+.navigation .nav-toggler li a .fas {
+  align-self: flex-end;
+}
+.navigation .nav-toggler li:hover {
+  transform: translateX(0);
 }
 .navigation .nav-bar-btn {
   display: none;
   text-align: center;
 }
 .navigation .nav-bar-btn .nav-bar-icon {
-  padding: 10px;
-  display: inline-block;
+  /* .fas{
+       color: darkred;
+   }*/
+  width: 50px;
+  height: 60px;
   border-radius: 5px;
-  background-color: #fff00f;
-  text-decoration: none;
 }
-.navigation .nav-bar-btn .nav-bar-icon .fas {
-  color: darkred;
+.navigation .nav-bar-btn .nav-bar-icon .nav-oplose {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #fff00f;
+  transition: all 0.3s ease;
+}
+.navigation .nav-bar-btn .nav-bar-icon .nav-oplose::before, .navigation .nav-bar-btn .nav-bar-icon .nav-oplose::after {
+  content: "";
+  width: 75%;
+  height: 10%;
+  position: absolute;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.navigation .nav-bar-btn .nav-bar-icon .nav-oplose::before {
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FF7550;
+  box-shadow: 0 12px 0 0 #FF7550;
+}
+.navigation .nav-bar-btn .nav-bar-icon .nav-oplose::after {
+  bottom: 10px;
+  right: 50%;
+  background-color: #FF7550;
+  transform: translateX(50%);
+}
+.navigation .nav-bar-btn .nav-bar-icon .nav-oplose:hover:before {
+  box-shadow: none;
+  transform: translateX(0) rotate(45deg);
+}
+.navigation .nav-bar-btn .nav-bar-icon .nav-oplose:hover:after {
+  transform: translate(0) rotate(45deg);
 }
 .navigation .nav-icon {
   width: 30%;
@@ -652,6 +692,11 @@ html, body {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(0, 0, 0);
   font-size: 1.2rem;
+  transition: 0.3s;
+}
+.person .person-info .person-icon .fab:hover {
+  color: #FF7550;
+  -webkit-text-stroke-color: #ff7550;
 }
 .person p {
   color: #969696;
@@ -1577,6 +1622,7 @@ html, body {
 }
 .footer .icon:hover a {
   color: #FF7550;
+  -webkit-text-stroke-color: #FF7550;
 }
 
 /*=========Our-Offer==========*/
