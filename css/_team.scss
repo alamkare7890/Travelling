@@ -11,9 +11,11 @@
     }
 
     .person{
-
+        padding-left: 50px;
         img{
             width: 100%;
+            height: 450px;
+            object-fit: contain;
         }
     }
 
@@ -76,15 +78,16 @@
     .person-info{
         width: 100%;
         padding: 10px 0;
+        justify-content: space-between;
         .dgn{
             width: 65%;
             h3{
                 color: #212121;
             }
-        }
+        } 
     
         .person-icon{
-            width: 35%;
+            width: 25%;
             .fab{
                 color: transparent;
                 -webkit-text-stroke-width: 1px;

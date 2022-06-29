@@ -71,7 +71,6 @@ $(document).ready(function () {
             
             },
            
-             
             {
                 breakpoint: 576,
                 settings: {
@@ -99,6 +98,8 @@ $(document).ready(function () {
         autoplaySpeed: 2000,
         arrows: false,
     })
+    
+    /*=====navigation======*/
     
     
 

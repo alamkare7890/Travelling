@@ -51,7 +51,12 @@ html,body{
         text-transform: uppercase;
         border: none;
         outline: none;
+        font-weight: 500;
         cursor: pointer;
+        border: 1px solid #FF7550;
+        text-decoration: 1px underline #f1f1f1;
+        transition: all 0.4s linear;
+
     }
     .dollor{
         color: #FF7550;
@@ -86,7 +91,7 @@ html,body{
 /*============FOOTER-BOX==============*/
 
 /*============NAV-BOX==============*/
-@import "nav"; 
+@import "navi"; 
 /*============HEADER-BOX==============*/
 @import "header";
 /*============ADVENTTURE-BOX==============*/
@@ -110,58 +115,9 @@ html,body{
 @import "media-query";
 
 /*==========Animation=============*/
-
+@import"animated";
 /*@import "animation";*/
 
-.nav-content {
-
-    li {
-
-        a:hover{
-            color: #f1f1f1;
-        }   
-
-        a::before{
-            content: " ";
-            width: 0;
-            height: 100%;
-            background-color: #FF7550;
-            position: absolute;
-            top: 0;
-            right: 0;
-            transition: all 0.5s linear;
-            z-index: -1;
-
-        }
-
-        a::after{
-            content: " ";
-            width: 0;
-            height: 100%;
-            background-color: #FF7550;  
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            z-index: -1;
-
-            transition: all 0.5s linear;
-        }
-
-        a:hover:before{
-            background-color: #FF7550;
-            width: 100%;
-            transition: all 0.5s linear;
-
-        }
-
-        a:hover:after{
-            background-color: #FF7550;
-            transition: all 0.5s linear;
-            width: 100%;
-        }
-    }
-
-}
 
 
 

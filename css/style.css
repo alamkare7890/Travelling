@@ -60,7 +60,12 @@ html, body {
   text-transform: uppercase;
   border: none;
   outline: none;
+  font-weight: 500;
   cursor: pointer;
+  border: 1px solid #FF7550;
+  -webkit-text-decoration: 1px underline #f1f1f1;
+          text-decoration: 1px underline #f1f1f1;
+  transition: all 0.4s linear;
 }
 
 .dollor {
@@ -119,17 +124,18 @@ html, body {
 }
 .navigation .nav-content li {
   list-style-type: none;
-  padding-left: 25px;
+  padding-left: 20px;
 }
 .navigation .nav-content li a {
   padding: 5px 2px;
   text-decoration: none;
-  color: #000;
+  color: #333333;
   font-size: 0.8rem;
   text-transform: uppercase;
   position: relative;
   cursor: pointer;
   z-index: 0;
+  transition: all 0.4s ease;
 }
 .navigation .nav-bar-btn {
   display: none;
@@ -166,6 +172,7 @@ html, body {
   padding: 25px 15px;
   align-self: flex-end;
   display: inline-block;
+  transition: all 0.4s linear;
 }
 
 /*
@@ -532,8 +539,14 @@ html, body {
 .team-box .team-head p {
   color: #787878;
 }
+.team-box .person {
+  padding-left: 50px;
+}
 .team-box .person img {
   width: 100%;
+  height: 450px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .team-box .slide-person {
   width: 100%;
@@ -584,6 +597,7 @@ html, body {
 .person .person-info {
   width: 100%;
   padding: 10px 0;
+  justify-content: space-between;
 }
 .person .person-info .dgn {
   width: 65%;
@@ -592,7 +606,7 @@ html, body {
   color: #212121;
 }
 .person .person-info .person-icon {
-  width: 35%;
+  width: 25%;
 }
 .person .person-info .person-icon .fab {
   color: transparent;
@@ -680,6 +694,9 @@ html, body {
   justify-content: center;
   margin-right: 15px;
 }
+.footer .icon {
+  transition: all 0.4s linear;
+}
 .footer .icon a {
   color: transparent;
   -webkit-text-stroke-width: 1px;
@@ -700,16 +717,20 @@ html, body {
   border-radius: 3px;
   border: none;
   margin: 10px 0;
+  outline: none;
 }
 .footer .email-us .email-btn {
   position: absolute;
   top: 50%;
   right: 0;
+  cursor: pointer;
+  color: #f1f1f1;
   transform: translateY(-50%);
   background-color: #FF7550;
   padding: 7px 18px;
   border: none;
   border-radius: 0 3px 3px 0;
+  transition: all 0.4s linear;
 }
 .footer .email-us .btn-icon {
   color: transparent;
@@ -821,6 +842,16 @@ html, body {
   }
 
   /*============TEAM-BOX==============*/
+  .team-box .person {
+    padding-left: 0;
+  }
+  .team-box .person img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+
   /*============PARTNERS-BOX==============*/
   .partners-box {
     padding: 250px 0;
@@ -900,6 +931,16 @@ html, body {
 
   /*============OFFER-BOX==============*/
   /*============TEAM-BOX==============*/
+  .team-box .person {
+    padding-left: 0;
+  }
+  .team-box .person img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+
   /*============PARTNERS-BOX==============*/
   .partners-box {
     padding: 200px 0;
@@ -1146,6 +1187,9 @@ html, body {
   }
 
   /*============TEAM-BOX==============*/
+  .team-box .person {
+    padding-left: 0;
+  }
   .team-box .slide-person .slick-dots li button {
     padding: 5px;
   }
@@ -1417,7 +1461,6 @@ html, body {
   /*============FOOTER-BOX==============*/
 }
 /*==========Animation=============*/
-/*@import "animation";*/
 .nav-content li a:hover {
   color: #f1f1f1;
 }
@@ -1431,6 +1474,7 @@ html, body {
   right: 0;
   transition: all 0.5s linear;
   z-index: -1;
+  border-radius: 5px;
 }
 .nav-content li a::after {
   content: " ";
@@ -1441,6 +1485,7 @@ html, body {
   bottom: 0;
   left: 0;
   z-index: -1;
+  border-radius: 5px;
   transition: all 0.5s linear;
 }
 .nav-content li a:hover:before {
@@ -1452,4 +1497,33 @@ html, body {
   background-color: #FF7550;
   transition: all 0.5s linear;
   width: 100%;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.nav-icon .sing-in:hover {
+  color: #fff;
+}
+
+.world-box .world-locate .des-button:hover, .offer-box .offer-btn:hover {
+  color: #FF7550;
+  background-color: #f1f1f1;
+  box-shadow: 0 0 5px 0 #f1f1f1;
+  -webkit-text-decoration: 1px underline #FF7550;
+          text-decoration: 1px underline #FF7550;
+}
+
+.footer .email-us .email-btn:hover {
+  box-shadow: 0 0 8px 0 #FF7550;
+}
+.footer input:focus {
+  outline: #FF7550;
+  box-shadow: 0 0 8px 2px #FF7550;
+}
+.footer .icon:hover {
+  box-shadow: 0 0 8px 1px #FF7550;
+  cursor: pointer;
+}
+.footer .icon:hover a {
+  color: #FF7550;
+}
+
+/*@import "animation";*//*# sourceMappingURL=style.css.map */

@@ -115,7 +115,17 @@
         padding: 300px 0;
     }
     /*============TEAM-BOX==============*/
-   
+    .team-box{
+
+        .person{
+            padding-left: 0;
+            img{
+                width: 100%;
+                height: 400px;
+                object-fit: contain;
+            }   
+        }
+    }
 
 
 
@@ -229,6 +239,17 @@
     }
     /*============OFFER-BOX==============*/
     /*============TEAM-BOX==============*/
+    .team-box{
+
+        .person{
+            padding-left: 0;
+            img{
+                width: 100%;
+                height: 400px;
+                object-fit: contain;
+            }   
+        }
+    }
     /*============PARTNERS-BOX==============*/
     .partners-box{
         padding: 200px 0;
@@ -572,7 +593,9 @@
     }
     /*============TEAM-BOX==============*/
      .team-box{
-
+        .person{
+            padding-left: 0;
+        }
         .slide-person{
 
             .slick-dots{

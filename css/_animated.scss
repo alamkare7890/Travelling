@@ -1,0 +1,88 @@
+.nav-content {
+
+    li {
+
+        a:hover{
+            color: #f1f1f1;
+        }   
+
+        a::before{
+            content: " ";
+            width: 0;
+            height: 100%;
+            background-color: #FF7550;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: all 0.5s linear;
+            z-index: -1;
+            border-radius: 5px;
+        }
+
+        a::after{
+            content: " ";
+            width: 0;
+            height: 100%;
+            background-color: #FF7550;  
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            border-radius: 5px;
+
+            transition: all 0.5s linear;
+        }
+
+        a:hover:before{
+            background-color: #FF7550;
+            width: 100%;
+            transition: all 0.5s linear;
+
+        }
+
+        a:hover:after{
+            background-color: #FF7550;
+            transition: all 0.5s linear;
+            width: 100%;
+        }
+    }
+
+
+}
+.nav-icon{
+
+    .sing-in:hover{
+        color: #fff;
+    }
+
+}
+%commonButton:hover{
+    color: #FF7550;
+    background-color: #f1f1f1;
+    box-shadow: 0 0 5px 0 #f1f1f1;  
+    text-decoration: 1px underline #FF7550;
+}
+
+.footer{
+
+    .email-us{
+
+        .email-btn:hover{
+            box-shadow: 0 0 8px 0 #FF7550;
+        }
+
+    }
+    input:focus{
+        outline: #FF7550;
+        box-shadow: 0 0 8px 2px #FF7550;
+    }   
+
+
+    .icon:hover{
+        box-shadow: 0 0 8px 1px #FF7550;
+        cursor: pointer;
+    }
+    .icon:hover a{
+        color: #FF7550;
+    }
+}
