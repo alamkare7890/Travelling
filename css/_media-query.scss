@@ -267,6 +267,24 @@
         }
     }
 }
+@media only screen and (max-width:991px){
+
+    .navigation{
+
+        .nav-content{
+            width: 57%;
+
+            li{
+                padding-left: 15px;
+            }
+        }
+
+        .nav-icon{
+            width: 28%;
+        }
+    }
+}
+
 @media only screen and (max-width:920px){
     /*===========Common-box========*/
     html,body{
@@ -300,6 +318,9 @@
                 padding: 15px 10px;
                 border-bottom: 1px solid #2121213d;
             }
+        }
+        .nav-toggler{
+            display: flex;
         }
         .nav-logo{
             order: 1;

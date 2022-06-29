@@ -86,3 +86,56 @@
         color: #FF7550;
     }
 }
+/*=========Our-Offer==========*/
+.offer-box::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    z-index: -1;
+    background-color: #000;
+
+}
+/*==========place-box========*/
+.places-box{
+
+    .place-left::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        opacity: 0.5;
+        background: #000;
+    }
+
+    .place-left:hover img{
+        transform: scale(1.05);
+
+        
+
+    }
+    .place-right{
+
+        .egypt:hover img{
+        transform: scale(1.1);
+
+        }
+
+        .london:hover img{
+        transform: scale(1.1);
+
+        }
+
+    }
+
+    .place-left:hover:before{
+        opacity: 0;
+    }
+}
+

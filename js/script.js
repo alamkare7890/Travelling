@@ -102,5 +102,10 @@ $(document).ready(function () {
     /*=====navigation======*/
     
     
+    /*========AOS========*/
+    AOS.init();
+    
+    
 
+    
 })

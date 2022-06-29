@@ -2,9 +2,11 @@
     width: 100%;
     padding: 200px 0;
     min-height: 350px;
+    position: relative;
     background-image: url(../image/jpg/bgparallax-02.jpg);
     background-attachment: fixed;
     @extend %bgProperty;
+    z-index: 0;
     h2{
         color: #f1f1f1;
         padding-top: 70px;
@@ -19,3 +21,4 @@
         color: #f1f1f1;
     }
 }
+

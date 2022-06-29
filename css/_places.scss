@@ -4,6 +4,8 @@
     .place-left{
         width: 48%;
         img{
+                position: relative;
+            transition: all 0.4s ease;
             width: 100%;
         }
     }
@@ -11,12 +13,16 @@
         width: 48%;
         .egypt{
             img{
+                position: relative;
+                transition: all 0.4s ease;
                 width: 100%;
             }
             padding-bottom: 50px;
         }
         .london{
             img{
+                position: relative;
+                transition: all 0.4s ease;
                 width: 100%;
             }
 
