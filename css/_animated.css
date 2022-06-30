@@ -83,18 +83,6 @@
 }
 
 /*==========place-box========*/
-.places-box .place-left::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  opacity: 0.5;
-  background: #000;
-}
-
 .places-box .place-left:hover img {
   transform: scale(1.05);
 }
@@ -107,6 +95,19 @@
   transform: scale(1.1);
 }
 
-.places-box .place-left:hover:before {
+.places-box .place-left::before, .places-box .egypt::before, .places-box .london::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  opacity: 0.5;
+  background: #000;
+  transition: all 0.5s ease;
+}
+
+.places-box .place-left:hover:before, .places-box .egypt:hover:before, .places-box .london:hover:before {
   opacity: 0;
 }

@@ -576,27 +576,44 @@ html, body {
 /*============PLACES-BOX==============*/
 .places-box .place-left {
   width: 48%;
+  transition: all 0.5s ease;
+  position: relative;
+  cursor: pointer;
 }
 .places-box .place-left img {
-  position: relative;
   transition: all 0.4s ease;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
 }
 .places-box .place-right {
   width: 48%;
 }
 .places-box .place-right .egypt {
-  padding-bottom: 50px;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 50px;
 }
 .places-box .place-right .egypt img {
   position: relative;
   transition: all 0.4s ease;
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.places-box .place-right .london {
+  position: relative;
+  cursor: pointer;
 }
 .places-box .place-right .london img {
   position: relative;
   transition: all 0.4s ease;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
 }
 
 /*============OFFER-BOX==============*/
@@ -932,7 +949,7 @@ html, body {
   /*============WORLD-BOX==============*/
   /*============PLACES-BOX==============*/
   .places-box .place-right .egypt {
-    padding-bottom: 67px;
+    margin-bottom: 67px;
   }
 
   /*============OFFER-BOX==============*/
@@ -1155,7 +1172,7 @@ html, body {
   }
   .places-box .place-left img {
     width: 100%;
-    height: 400px;
+    height: 450px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -1163,7 +1180,7 @@ html, body {
     width: 100%;
   }
   .places-box .place-right .egypt {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   /*============OFFER-BOX==============*/
@@ -1659,17 +1676,6 @@ html, body {
 }
 
 /*==========place-box========*/
-.places-box .place-left::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  opacity: 0.5;
-  background: #000;
-}
 .places-box .place-left:hover img {
   transform: scale(1.05);
 }
@@ -1679,7 +1685,19 @@ html, body {
 .places-box .place-right .london:hover img {
   transform: scale(1.1);
 }
-.places-box .place-left:hover:before {
+.places-box .place-left::before, .places-box .egypt::before, .places-box .london::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  opacity: 0.5;
+  background: #000;
+  transition: all 0.5s ease;
+}
+.places-box .place-left:hover:before, .places-box .egypt:hover:before, .places-box .london:hover:before {
   opacity: 0;
 }
 
