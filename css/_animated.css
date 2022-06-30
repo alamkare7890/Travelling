@@ -85,14 +85,17 @@
 /*==========place-box========*/
 .places-box .place-left:hover img {
   transform: scale(1.05);
+  overflow: hidden;
 }
 
 .places-box .place-right .egypt:hover img {
   transform: scale(1.1);
+  overflow: hidden;
 }
 
 .places-box .place-right .london:hover img {
   transform: scale(1.1);
+  overflow: hidden;
 }
 
 .places-box .place-left::before, .places-box .egypt::before, .places-box .london::before {

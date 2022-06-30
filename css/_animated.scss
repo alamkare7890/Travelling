@@ -113,18 +113,20 @@
 
     .place-left:hover img{
         transform: scale(1.05);
+        overflow: hidden;
 
 
     }
     .place-right{
 
         .egypt:hover img{
-        transform: scale(1.1);
-
+            transform: scale(1.1);
+            overflow: hidden;
         }
 
         .london:hover img{
-        transform: scale(1.1);
+            transform: scale(1.1);
+            overflow: hidden;
 
         }
 
