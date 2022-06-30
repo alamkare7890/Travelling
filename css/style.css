@@ -145,7 +145,7 @@ html, body {
   top: 80px;
   text-align: left;
   z-index: 5;
-  width: 180px;
+  width: 120px;
 }
 .navigation .nav-toggler li {
   display: flex;
@@ -154,7 +154,7 @@ html, body {
   align-items: center;
   background-color: #FF7550;
   transition: all 0.4s linear;
-  transform: translateX(-145px);
+  transform: translateX(-180px);
 }
 .navigation .nav-toggler li span {
   display: flex;
@@ -173,7 +173,7 @@ html, body {
   align-self: flex-end;
 }
 .navigation .nav-toggler li:hover {
-  transform: translateX(0);
+  transform: translateX(-75px);
 }
 .navigation .nav-bar-btn {
   display: none;
@@ -186,6 +186,16 @@ html, body {
   width: 50px;
   height: 60px;
   border-radius: 5px;
+  /*
+             .nav-oplose::before, .nav-oplose::after{
+                  content: "";
+                  width: 75%;
+                  height: 10%;
+                  position: absolute;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+              }
+  */
 }
 .navigation .nav-bar-btn .nav-bar-icon .nav-oplose {
   width: 100%;
@@ -193,34 +203,37 @@ html, body {
   position: relative;
   background-color: #fff00f;
   transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.navigation .nav-bar-btn .nav-bar-icon .nav-oplose::before, .navigation .nav-bar-btn .nav-bar-icon .nav-oplose::after {
+.navigation .nav-bar-btn .nav-bar-icon .nav-oplose::before {
   content: "";
   width: 75%;
   height: 10%;
   position: absolute;
   border-radius: 5px;
   transition: all 0.3s ease;
-}
-.navigation .nav-bar-btn .nav-bar-icon .nav-oplose::before {
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
   background-color: #FF7550;
-  box-shadow: 0 12px 0 0 #FF7550;
+  box-shadow: 0 15px 0 0 #FF7550;
+  transform: translateY(-15px);
 }
 .navigation .nav-bar-btn .nav-bar-icon .nav-oplose::after {
-  bottom: 10px;
-  right: 50%;
+  content: "";
+  width: 75%;
+  height: 10%;
+  position: absolute;
+  border-radius: 5px;
+  transition: all 0.3s ease;
   background-color: #FF7550;
-  transform: translateX(50%);
+  transform: translateY(15px);
 }
-.navigation .nav-bar-btn .nav-bar-icon .nav-oplose:hover:before {
+.navigation .nav-bar-btn .nav-bar-icon .nav-oplose.active::before {
   box-shadow: none;
-  transform: translateX(0) rotate(45deg);
+  transform: translateY(0px) rotate(45deg);
 }
-.navigation .nav-bar-btn .nav-bar-icon .nav-oplose:hover:after {
-  transform: translate(0) rotate(45deg);
+.navigation .nav-bar-btn .nav-bar-icon .nav-oplose.active::after {
+  transform: translateY(0px) rotate(-45deg);
 }
 .navigation .nav-icon {
   width: 30%;
@@ -233,17 +246,19 @@ html, body {
   font-size: 1rem;
 }
 .navigation .nav-icon a .fab {
+  transition: all 0.3s;
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 .navigation .nav-icon .sing-in {
+  border-radius: 3px;
   background-color: #FEE133;
   color: #000;
   padding: 25px 15px;
   align-self: flex-end;
   display: inline-block;
-  transition: all 0.4s linear;
+  transition: all 0.3s linear;
 }
 
 /*
@@ -1597,8 +1612,13 @@ html, body {
   width: 100%;
 }
 
+.nav-icon a:hover .fab {
+  color: #FF7550;
+  -webkit-text-stroke-color: #FF7550;
+}
 .nav-icon .sing-in:hover {
-  color: #fff;
+  background-color: #FF7550;
+  color: #f1f1f1;
 }
 
 .world-box .world-locate .des-button:hover, .offer-box .offer-btn:hover {

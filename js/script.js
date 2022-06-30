@@ -105,7 +105,22 @@ $(document).ready(function () {
     /*========AOS========*/
     AOS.init();
     
-    
+    /*===========toggle-button========*/    
+    var myToggle =  document.getElementById('btnToggle');
 
+    btnToggle.onclick = function () {
+
+        btnToggle.classList.toggle('active');
+
+    }
+    /*========navOpen=====*/
+    $('#openNav').click(function () {
+    
+        $('#slideNav').slideToggle();
+    
+    
+    })
+    
+    
     
 })
