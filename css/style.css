@@ -579,6 +579,7 @@ html, body {
   transition: all 0.5s ease;
   position: relative;
   cursor: pointer;
+  overflow: hidden;
 }
 .places-box .place-left img {
   transition: all 0.4s ease;
@@ -593,6 +594,7 @@ html, body {
 .places-box .place-right .egypt {
   position: relative;
   cursor: pointer;
+  overflow: hidden;
   margin-bottom: 50px;
 }
 .places-box .place-right .egypt img {
@@ -606,6 +608,7 @@ html, body {
 .places-box .place-right .london {
   position: relative;
   cursor: pointer;
+  overflow: hidden;
 }
 .places-box .place-right .london img {
   position: relative;
@@ -1678,12 +1681,15 @@ html, body {
 /*==========place-box========*/
 .places-box .place-left:hover img {
   transform: scale(1.05);
+  overflow: hidden;
 }
 .places-box .place-right .egypt:hover img {
   transform: scale(1.1);
+  overflow: hidden;
 }
 .places-box .place-right .london:hover img {
   transform: scale(1.1);
+  overflow: hidden;
 }
 .places-box .place-left::before, .places-box .egypt::before, .places-box .london::before {
   content: "";
