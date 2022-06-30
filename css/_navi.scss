@@ -58,8 +58,7 @@
             align-items: center;
             background-color: #FF7550;
             transition: all 0.4s linear;
-            transform: translateX(-180px);
-
+            transform: translateX(-118%);
             span{
                 display: flex;
                 @extend %centerContent;
@@ -81,7 +80,7 @@
 
         }
         li:hover{
-            transform: translateX(-75px);
+            transform: translateX(-50%);
         }
 
     }

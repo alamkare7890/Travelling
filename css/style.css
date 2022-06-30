@@ -154,7 +154,7 @@ html, body {
   align-items: center;
   background-color: #FF7550;
   transition: all 0.4s linear;
-  transform: translateX(-180px);
+  transform: translateX(-118%);
 }
 .navigation .nav-toggler li span {
   display: flex;
@@ -173,7 +173,7 @@ html, body {
   align-self: flex-end;
 }
 .navigation .nav-toggler li:hover {
-  transform: translateX(-75px);
+  transform: translateX(-50%);
 }
 .navigation .nav-bar-btn {
   display: none;
