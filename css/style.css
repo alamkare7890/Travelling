@@ -214,7 +214,7 @@ html, body {
 }
 .navigation .nav-bar-btn .nav-bar-icon .nav-oplose::before {
   content: "";
-  width: 75%;
+  width: 90%;
   height: 10%;
   position: absolute;
   border-radius: 5px;
@@ -225,7 +225,7 @@ html, body {
 }
 .navigation .nav-bar-btn .nav-bar-icon .nav-oplose::after {
   content: "";
-  width: 75%;
+  width: 90%;
   height: 10%;
   position: absolute;
   border-radius: 5px;
@@ -1417,6 +1417,9 @@ html, body {
     padding: 8px 15px;
   }
   /*============NAV-BOX==============*/
+  .navigation .nav-bar-btn {
+    width: 15%;
+  }
   .navigation .nav-icon {
     width: 75%;
   }

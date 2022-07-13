@@ -836,7 +836,9 @@
     /*============NAV-BOX==============*/
     .navigation{
 
-       
+       .nav-bar-btn{
+          width: 15%;
+       }
         .nav-icon{
             width: 75%;
 
@@ -962,9 +964,7 @@
 
 @media only screen and (max-width:380px){
     /*============NAV-BOX==============*/
-    .nav-oplose::before, .nav-oplose::after{
-        width: 90%;
-    }
+
     /*============HEADER-BOX==============*/
     .header-box{
         padding-bottom: 10px;
