@@ -142,6 +142,7 @@ html, body {
   display: none;
   flex-direction: column;
   position: absolute;
+  left: -145px;
   top: 80px;
   text-align: left;
   z-index: 5;
@@ -154,7 +155,7 @@ html, body {
   align-items: center;
   background-color: #FF7550;
   transition: all 0.4s linear;
-  transform: translateX(-118%);
+  border-radius: 0 5px 5px 0;
 }
 .navigation .nav-toggler li span {
   display: flex;
@@ -163,17 +164,21 @@ html, body {
   height: 45px;
   cursor: pointer;
   color: #f1f1f1;
+  border-radius: 0 5px 5px 0;
 }
 .navigation .nav-toggler li a {
   display: flex;
   text-decoration: none;
-  color: #333333;
+  color: #f1f1f1;
 }
 .navigation .nav-toggler li a .fas {
-  align-self: flex-end;
+  display: none;
 }
 .navigation .nav-toggler li:hover {
-  transform: translateX(-50%);
+  transform: translateX(100px);
+}
+.navigation .slide-nav {
+  left: -100px;
 }
 .navigation .nav-bar-btn {
   display: none;
@@ -876,24 +881,19 @@ html, body {
   html, body {
     font-size: 24px;
   }
-
   .text {
     line-height: 32px;
   }
-
   .world-box .world-locate .des-button, .offer-box .offer-btn {
     padding: 20px 30px;
     font-size: 0.75rem;
   }
-
   .adventure-box, .world-box, .places-box, .footer-box, .creator-box {
     padding-bottom: 80px;
   }
-
   .container {
     max-width: 1470px;
   }
-
   /*============NAV-BOX==============*/
   .navigation {
     padding: 20px 50px;
@@ -913,7 +913,6 @@ html, body {
   .navigation .nav-icon .sing-in {
     padding: 30px 25px;
   }
-
   /*============HEADER-BOX==============*/
   .header-box .header-content {
     padding-top: 150px;
@@ -924,13 +923,11 @@ html, body {
   .header-box .bg-slide img {
     height: 850px;
   }
-
   /*============ADVENTTURE-BOX==============*/
   .adventure-box .get-nature .ice-park, .adventure-box .get-nature2 .national-park, .adventure-box .get-nature2 .vacation-park, .adventure-box .popular-box, .adventure-box .offer-box, .adventure-box .partners-box {
     padding: 120px 0;
     margin: 10px;
   }
-
   /*============POPULAR-BOX==============*/
   .popular-box .slide-content .pakages {
     padding-bottom: 20px;
@@ -948,18 +945,15 @@ html, body {
   .popular-box .slide-content .slick-next {
     right: -50px;
   }
-
   /*============WORLD-BOX==============*/
   /*============PLACES-BOX==============*/
   .places-box .place-right .egypt {
     margin-bottom: 67px;
   }
-
   /*============OFFER-BOX==============*/
   .offer-box {
     padding: 300px 0;
   }
-
   /*============TEAM-BOX==============*/
   .team-box .person {
     padding-left: 0;
@@ -970,12 +964,10 @@ html, body {
     -o-object-fit: contain;
        object-fit: contain;
   }
-
   /*============PARTNERS-BOX==============*/
   .partners-box {
     padding: 250px 0;
   }
-
   /*============FOOTER-BOX==============*/
   /*.footer{
 
@@ -1001,21 +993,17 @@ html, body {
   html, body {
     font-size: 22px;
   }
-
   .text {
     line-height: 32px;
   }
-
   .world-box .world-locate .des-button, .offer-box .offer-btn {
     padding: 18px 25px;
     font-size: 0.75rem;
   }
-
   /*============NAV-BOX==============*/
   .navigation {
     padding: 20px 35px;
   }
-
   /*============HEADER-BOX==============*/
   .header-box .header-contact .destination select, .header-box .header-contact .type select, .header-box .header-contact .month select, .header-box .header-contact .duration select, .header-box .header-contact .contact-button select {
     padding: 20px 25px;
@@ -1023,13 +1011,11 @@ html, body {
   .header-box .bg-slide img {
     height: 750px;
   }
-
   /*============ADVENTTURE-BOX==============*/
   .adventure-box .get-nature .ice-park, .adventure-box .get-nature2 .national-park, .adventure-box .get-nature2 .vacation-park, .adventure-box .popular-box, .adventure-box .offer-box, .adventure-box .partners-box {
     padding: 100px 0;
     margin: 10px;
   }
-
   /*============POPULAR-BOX==============*/
   .popular-box .slide-content .slick-prev, .popular-box .slide-content .slick-next {
     width: 70px;
@@ -1041,13 +1027,11 @@ html, body {
   .popular-box .slide-content .slick-next {
     right: -30px;
   }
-
   /*============WORLD-BOX==============*/
   /*============PLACES-BOX==============*/
   .places-box .place-right .london {
     margin-top: 5px;
   }
-
   /*============OFFER-BOX==============*/
   /*============TEAM-BOX==============*/
   .team-box .person {
@@ -1059,12 +1043,10 @@ html, body {
     -o-object-fit: contain;
        object-fit: contain;
   }
-
   /*============PARTNERS-BOX==============*/
   .partners-box {
     padding: 200px 0;
   }
-
   /*============FOOTER-BOX==============*/
   .footer-box .footer {
     padding: 15px;
@@ -1089,19 +1071,15 @@ html, body {
   html, body {
     font-size: 16px;
   }
-
   .text {
     line-height: 24px;
   }
-
   .world-box .world-locate .des-button, .offer-box .offer-btn {
     padding: 15px 20px;
   }
-
   .small-head {
     font-size: 1.2rem;
   }
-
   /*============NAV-BOX==============*/
   .navigation .nav-content {
     display: none;
@@ -1133,7 +1111,6 @@ html, body {
     width: 70%;
     order: 2;
   }
-
   /*============HEADER-BOX==============*/
   .header-box .header-content h2 {
     font-size: 3rem;
@@ -1141,7 +1118,6 @@ html, body {
   .header-box .header-contact {
     padding-right: 30px;
   }
-
   /*============ADVENTTURE-BOX==============*/
   .adventure-box .get-benefits .benefits {
     padding: 5px;
@@ -1149,7 +1125,6 @@ html, body {
   .adventure-box .get-benefits .benefits p {
     text-indent: 20px;
   }
-
   /*============POPULAR-BOX==============*/
   .popular-box .slide-content .slick-prev {
     left: -10px;
@@ -1157,7 +1132,6 @@ html, body {
   .popular-box .slide-content .slick-next {
     right: -10px;
   }
-
   /*============WORLD-BOX==============*/
   .world-box .world-image {
     width: 100%;
@@ -1168,7 +1142,6 @@ html, body {
   .world-box .world-locate .button-box {
     text-align: center;
   }
-
   /*============PLACES-BOX==============*/
   .places-box .place-left {
     width: 100%;
@@ -1185,22 +1158,18 @@ html, body {
   .places-box .place-right .egypt {
     margin-bottom: 0;
   }
-
   /*============OFFER-BOX==============*/
   .offer-box {
     padding: 150px 0;
   }
-
   /*============TEAM-BOX==============*/
   .team-box .slide-person .slick-dots li button {
     padding: 7px;
   }
-
   /*============PARTNERS-BOX==============*/
   .partners-box {
     padding: 180px 0;
   }
-
   /*============FOOTER-BOX==============*/
   .footer-box {
     padding-top: 50px;
@@ -1212,7 +1181,6 @@ html, body {
   .footer-box .trip-items {
     padding-bottom: 25px;
   }
-
   .footer .email-us .email-btn {
     padding: 10px 22px;
   }
@@ -1239,7 +1207,6 @@ html, body {
   body .small-head {
     font-size: 1.2rem;
   }
-
   /*============NAV-BOX==============*/
   .navigation .nav-logo {
     width: 20%;
@@ -1250,7 +1217,6 @@ html, body {
   .navigation .nav-icon {
     width: 70%;
   }
-
   /*============HEADER-BOX==============*/
   .header-box .header-contact .destination, .header-box .header-contact .type, .header-box .header-contact .month, .header-box .header-contact .duration, .header-box .header-contact .contact-button {
     width: 48%;
@@ -1268,7 +1234,6 @@ html, body {
   .header-box .header-content h2 {
     font-size: 2.5rem;
   }
-
   /*============ADVENTTURE-BOX==============*/
   .adventure-box .get-nature {
     width: 80%;
@@ -1294,7 +1259,6 @@ html, body {
   .adventure-box .get-benefits .benefits p {
     text-indent: 20px;
   }
-
   /*============POPULAR-BOX==============*/
   .popular-box .slide-content .pakages p {
     padding: 0;
@@ -1305,7 +1269,6 @@ html, body {
   .popular-box .slide-content .slick-next {
     right: -5px;
   }
-
   /*============WORLD-BOX==============*/
   /*============PLACES-BOX==============*/
   .places-box .place-left img {
@@ -1313,12 +1276,10 @@ html, body {
     -o-object-fit: cover;
        object-fit: cover;
   }
-
   /*============OFFER-BOX==============*/
   .offer-box {
     padding: 100px 0;
   }
-
   /*============TEAM-BOX==============*/
   .team-box .person {
     padding-left: 0;
@@ -1326,7 +1287,6 @@ html, body {
   .team-box .slide-person .slick-dots li button {
     padding: 5px;
   }
-
   /*============PARTNERS-BOX==============*/
   .partners-box {
     padding: 120px 0;
@@ -1338,7 +1298,6 @@ html, body {
     width: 30%;
     padding-top: 30px;
   }
-
   /*============FOOTER-BOX==============*/
   .footer-box {
     padding: 50px;
@@ -1351,7 +1310,6 @@ html, body {
   .world-box .world-locate .des-button, .offer-box .offer-btn {
     padding: 12px 18px;
   }
-
   /*============NAV-BOX==============*/
   .navigation .nav-logo {
     width: 20%;
@@ -1363,7 +1321,6 @@ html, body {
   .navigation .nav-icon {
     width: 85%;
   }
-
   /*============HEADER-BOX==============*/
   .header-box .header-contact .destination, .header-box .header-contact .type, .header-box .header-contact .month, .header-box .header-contact .duration, .header-box .header-contact .contact-button {
     width: 100%;
@@ -1387,7 +1344,6 @@ html, body {
   .header-box .bg-slide img {
     height: 700px;
   }
-
   /*============ADVENTTURE-BOX==============*/
   .adventure-box {
     padding: 0;
@@ -1398,7 +1354,6 @@ html, body {
   .adventure-box .get-benefits .benefits {
     width: 90%;
   }
-
   /*============POPULAR-BOX==============*/
   .popular-box .slide-content .pakages {
     padding-bottom: 20px;
@@ -1409,13 +1364,11 @@ html, body {
   .popular-box .slide-content .pakages p {
     padding: 10px;
   }
-
   /*============WORLD-BOX==============*/
   /*============PLACES-BOX==============*/
   .places-box .place-left img {
     height: 300px;
   }
-
   /*============OFFER-BOX==============*/
   .offer-box {
     padding: 70px 0;
@@ -1426,7 +1379,6 @@ html, body {
   .offer-box p {
     padding-bottom: 50px;
   }
-
   /*============TEAM-BOX==============*/
   /*============PARTNERS-BOX==============*/
   .partners-box {
@@ -1439,7 +1391,6 @@ html, body {
     width: 50%;
     padding-top: 30px;
   }
-
   /*============FOOTER-BOX==============*/
   .footer-box .footer {
     padding: 30px 0 0 0;
@@ -1453,23 +1404,18 @@ html, body {
   .container {
     width: 100%;
   }
-
   .big-head {
     font-size: 1.5rem;
   }
-
   .medium-head {
     font-size: 1.2rem;
   }
-
   .small-head {
     font-size: 1rem;
   }
-
   .world-box .world-locate .des-button, .offer-box .offer-btn {
     padding: 8px 15px;
   }
-
   /*============NAV-BOX==============*/
   .navigation .nav-icon {
     width: 75%;
@@ -1477,7 +1423,6 @@ html, body {
   .navigation .nav-icon a {
     margin-left: 10px;
   }
-
   /*============HEADER-BOX==============*/
   .header-box .header-content {
     padding: 120px 0 20px 0;
@@ -1488,7 +1433,6 @@ html, body {
   .header-box .header-content h2 {
     font-size: 2rem;
   }
-
   /*============ADVENTTURE-BOX==============*/
   .adventure-box .get-nature .ice-park {
     padding: 60px;
@@ -1503,18 +1447,15 @@ html, body {
     padding-top: 0;
     width: 100%;
   }
-
   /*============POPULAR-BOX==============*/
   /*============WORLD-BOX==============*/
   .world-box .world-locate a {
     padding: 8px 12px;
   }
-
   /*============PLACES-BOX==============*/
   .places-box .place-left img {
     height: 250px;
   }
-
   /*============OFFER-BOX==============*/
   .offer-box {
     padding: 50px 0;
@@ -1525,7 +1466,6 @@ html, body {
   .offer-box p {
     padding-bottom: 30px;
   }
-
   /*============TEAM-BOX==============*/
   /*============PARTNERS-BOX==============*/
   .partners-box {
@@ -1538,7 +1478,6 @@ html, body {
     width: 100%;
     padding-top: 15px;
   }
-
   /*============FOOTER-BOX==============*/
   .footer-box {
     padding: 50px 20px 20px 20px;
@@ -1562,7 +1501,6 @@ html, body {
   .header-box .header-content h2 {
     font-size: 1.8rem;
   }
-
   /*============ADVENTTURE-BOX==============*/
   /*============POPULAR-BOX==============*/
   .popular-box {
@@ -1577,17 +1515,14 @@ html, body {
   .popular-box .slide-content .pakages p {
     padding: 0;
   }
-
   /*============WORLD-BOX==============*/
   .world-box .world-locate a {
     padding: 8px 10px;
   }
-
   /*============PLACES-BOX==============*/
   .places-box .place-left img {
     height: 200px;
   }
-
   /*============OFFER-BOX==============*/
   /*============TEAM-BOX==============*/
   /*============PARTNERS-BOX==============*/

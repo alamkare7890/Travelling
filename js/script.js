@@ -111,16 +111,18 @@ $(document).ready(function () {
     btnToggle.onclick = function () {
 
         btnToggle.classList.toggle('active');
-
     }
     /*========navOpen=====*/
     $('#openNav').click(function () {
-    
-        $('#slideNav').slideToggle();
-    
+
+        $('.nav-toggler').addClass('slide-nav');
     
     })
+    $('#openNav').dblclick(function () {
+
+        $('.nav-toggler').removeClass('slide-nav');
     
+    })
     
     
 })
