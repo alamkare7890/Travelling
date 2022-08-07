@@ -147,6 +147,7 @@ html, body {
   text-align: left;
   z-index: 5;
   width: 120px;
+  transition: all 0.4s linear;
 }
 .navigation .nav-toggler li {
   display: flex;
@@ -179,6 +180,7 @@ html, body {
 }
 .navigation .slide-nav {
   left: -100px;
+  transition: all 0.4s linear;
 }
 .navigation .nav-bar-btn {
   display: none;

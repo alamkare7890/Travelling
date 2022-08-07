@@ -115,14 +115,10 @@ $(document).ready(function () {
     /*========navOpen=====*/
     $('#openNav').click(function () {
 
-        $('.nav-toggler').addClass('slide-nav');
+        $('.nav-toggler').toggleClass('slide-nav');
     
     })
-    $('#openNav').dblclick(function () {
-
-        $('.nav-toggler').removeClass('slide-nav');
     
-    })
     
     
 })
